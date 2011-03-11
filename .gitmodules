@@ -1,0 +1,3 @@
+[submodule "/home/gabomagno/dotfiles/vim/bundle/gundo"]
+	path = /home/gabomagno/dotfiles/vim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
