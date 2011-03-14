@@ -115,5 +115,5 @@ nnoremap <F5> :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle spell checking on and off with `,s` for Spanish
 let mapleader = ","
-nmap <silent> <leader>s :set spl=es spell<CR>
+nmap <silent> <leader>s :set spl=es spell!<CR>
 
