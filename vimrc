@@ -117,3 +117,4 @@ nnoremap <F5> :GundoToggle<CR>
 let mapleader = ","
 nmap <silent> <leader>s :set spl=es spell!<CR>
 
+set colorcolumn=85

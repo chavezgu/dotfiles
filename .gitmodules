@@ -1,5 +1,5 @@
 [submodule "/home/gabomagno/dotfiles/vim/bundle/gundo"]
-	path = /home/gabomagno/dotfiles/vim/bundle/gundo
+	path = vim/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
