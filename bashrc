@@ -1,5 +1,5 @@
 #Vi mode
-set -o vi
+#set -o vi
 
 # Check for an interactive session
 [ -z "$PS1" ] && return
