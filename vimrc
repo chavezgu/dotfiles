@@ -33,7 +33,7 @@ call pathogen#helptags()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable filetype plugin
 if has("autocmd")
-    filetype plugin on
+    filetype plugin indent on
 endif
 
 
@@ -118,3 +118,12 @@ let mapleader = ","
 nmap <silent> <leader>s :set spl=es spell!<CR>
 
 set colorcolumn=85
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-latex suite
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
+
+
+
