@@ -23,6 +23,9 @@ set nocompatible
 " Sets how many lines of history VIM has to remember
 set history=700
 
+"Change the mapleader from '\' to ','
+let mapleader = ","
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pathogen
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -108,15 +111,13 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gundo plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <leader><F5> :GundoToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle spell checking on and off with `,s` for Spanish
-let mapleader = ","
 nmap <silent> <leader>s :set spl=es spell!<CR>
-
 set colorcolumn=85
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -124,6 +125,4 @@ set colorcolumn=85
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
-
-
 
