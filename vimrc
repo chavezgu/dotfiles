@@ -45,7 +45,8 @@ endif
 set autoread
 
 " Set to the current directory when a file is opened
-set autochdir
+" Seems to be a little incompatible with command+t 
+"set autochdir
 
 " Set the wild menu
 set wildmenu
