@@ -26,6 +26,7 @@ set history=700
 "Change the mapleader from '\' to ','
 let mapleader = ","
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pathogen
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -88,10 +89,40 @@ syntax enable "Enable syntax hl
 " Really good coloscheme. Similar to Textmate's
 colorscheme molokai
 
+" Solarized colorscheme. It has two modes: light and dark.
+"set background=dark 
+"colorscheme solarized
+
+"Mustang colorscheme
+"colorscheme mustang
+
 "line numbers. I guess
 set nu
 
 set encoding=utf8
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Good use of Vim and modifying normal behavior
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j  gj
+nnoremap k  gk
+
+" I don't need help. No this way.
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+"Editing my vimrc
+nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
