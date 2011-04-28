@@ -98,7 +98,10 @@ colorscheme molokai
 "colorscheme mustang
 
 "line numbers. I guess
-set nu
+"set nu
+
+"set relative line number. Really usefull for vim commands!
+set relativenumber
 
 set encoding=utf8
 
