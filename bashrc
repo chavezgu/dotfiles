@@ -4,7 +4,7 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin:.
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
