@@ -153,7 +153,8 @@ nnoremap <leader>g :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle spell checking on and off with `,s` for Spanish
 nmap <silent> <leader>s :set spl=es spell!<CR>
-nmap <silent> <leader>se :set spell!<CR>
+" Toggle english spell checking
+nmap <silent> <leader>n :set spl=en spell!<CR>
 set colorcolumn=85
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
