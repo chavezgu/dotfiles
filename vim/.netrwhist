@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/gabomagno/Projects/rails_projects/first_app/app/helpers'
 let g:netrw_dirhist_2='/home/gabomagno/.kde4/Autostart'
 let g:netrw_dirhist_3='/home/gabomagno/dotfiles/vim'
+let g:netrw_dirhist_4='/home/gabomagno/Dropbox/Documents/09_Semestre/compiladores/Tareas/tarea_lex_yacc'
