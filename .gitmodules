@@ -1,12 +1,12 @@
-[submodule "/home/gabomagno/dotfiles/vim/bundle/gundo"]
-	path = vim/bundle/gundo
-	url = http://github.com/sjl/gundo.vim.git
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/vim-colors-solarized"]
-	path = vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = git://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/command-t"]
 	path = vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "vim/bundle/c.vim"]
+	path = vim/bundle/c.vim
+	url = git://github.com/vim-scripts/c.vim.git
+[submodule "vim/bundle/gundo"]
+	path = vim/bundle/gundo
+	url = git://github.com/sjl/gundo.vim.git
