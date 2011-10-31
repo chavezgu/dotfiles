@@ -143,6 +143,8 @@ set ai "Auto indent
 set si "Smart indet
 set wrap "Wrap lines
 
+set nopaste "Disables annoying vim deafult behaviour when pasting
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gundo plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

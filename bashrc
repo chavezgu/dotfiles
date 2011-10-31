@@ -7,7 +7,8 @@ set -o vi
 PATH=$PATH:$HOME/bin:.
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \t \W]\$ '
+alias tsk='task'
+PS1='[\u@\h \t \W][$(task count status:pending)]\$ '
 
 complete -cf sudo
 complete -cf man

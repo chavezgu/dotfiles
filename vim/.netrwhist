@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/gabomagno/Projects/rails_projects/first_app/app/helpers'
 let g:netrw_dirhist_2='/home/gabomagno/.kde4/Autostart'
 let g:netrw_dirhist_3='/home/gabomagno/dotfiles/vim'
 let g:netrw_dirhist_4='/home/gabomagno/Dropbox/Documents/09_Semestre/compiladores/Tareas/tarea_lex_yacc'
 let g:netrw_dirhist_5='/home/gabomagno/Projects/autotools-presentacion/autoconf-2'
+let g:netrw_dirhist_6='/home/gabomagno/Projects/TweetRemoteControl/libgsocial'
