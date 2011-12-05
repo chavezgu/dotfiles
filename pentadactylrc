@@ -1,7 +1,7 @@
 set mapleader=","
 
 " use the listed characters to enumerate quickhint elements
-set hintkeys=asdfg;lkjh
+set hintkeys=asdfjkl
 
 " toggle menu toolbar
 nmap <C-F1> :set guioptions!=m<CR>
