@@ -1,0 +1,132 @@
+#======================================================#
+# Boring details
+set from = "gabrielchavez02@gmail.com"
+set realname = "Gabriel Chávez"
+set use_from = yes
+set envelope_from ="yes"
+set sort = 'threads'
+set sort_aux = 'reverse-last-date-received'
+set sort_re
+
+
+# Use a signature
+set signature="~/mutt/signature"
+
+#======================================================#
+# Mail settings
+set mbox_type   = Maildir
+set folder      = ~/Mail/GMail
+set spoolfile   = "+INBOX"
+set postponed   = "+drafts"
+set mbox        = "+archive"
+unset record
+mailboxes +INBOX +archive +sent +drafts +spam +trash +amorcito
+unset record
+
+#======================================================#
+
+#======================================================#
+#Mailing lists
+subscribe awesome@naquadah.org
+subscribe gtk-app-devel-list@gnome.org
+subscribe mutt-users@mutt.org
+subscribe cmus-devel@lists.sourceforge.net
+subscribe rhythmbox-devel@gnome.org
+
+#======================================================#
+# Colours: defaults are a little bleak so experiment!
+
+source ~/mutt/mutt_colors            # In their own file 
+#======================================================#
+
+#======================================================#
+# CACHE
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+#======================================================#
+# SENDING things
+
+set sendmail = /usr/bin/msmtp
+
+#======================================================#
+# Behave like gmail
+bind editor <space> noop
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+#macro index D "<save-message>+trash<enter>"   "move message to the trash"
+macro index S "<save-message>+spam<enter>"    "mark message as spam"
+
+set move = no  #Stop asking to "move read messages to mbox"!
+#======================================================#
+
+#======================================================#
+# Header stuff
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc
+
+ignore *
+unignore from: date subject to cc
+unignore x-mailing-list: posted-to:
+unignore x-mailer:
+#======================================================#
+
+# For better looks
+set markers=no # don't put '+' at the beginning of wrapped lines
+set pager_index_lines= 15 # how large is the index window?
+
+#======================================================#
+# which editor do you want to use? 
+# vim of course!
+set editor="vim -c 'set tw=70 et' '+/^$' " 
+set edit_headers=yes      # See the headers when editing
+
+#======================================================#
+
+# My Rolodeck :)
+set alias_file= ~/mutt/mutt_aliases
+set sort_alias= alias
+set reverse_alias=yes
+source $alias_file
+#======================================================#
+
+#======================================================#
+#GnuPG settings
+set pgp_decrypt_command="gpg --passphrase-fd 0 --no-verbose --batch --output - %f"
+set pgp_encrypt_only_command="pgpewrap gpg --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust -- -r %r -- %f"
+set pgp_list_pubring_command="gpg --no-verbose --batch --with-colons --list-keys %r" 
+set pgp_list_secring_command="gpg --no-verbose --batch --with-colons --list-secret-keys %r"
+set pgp_encrypt_only_command="pgpewrap gpg --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust -- -r %r -- %f"
+set pgp_verify_command="gpg --no-verbose --batch --output - --verify %s %f"
+set pgp_verify_key_command="gpg --no-verbose --batch --fingerprint --check-sigs %r"
+set pgp_sign_command="gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --detach-sign --textmode %?a?-u %a? %f"
+set pgp_sign_as=3B71DE9C
+#======================================================#
+
+#======================================================#
+# abook settings
+# abook is a cool command-line address book program 
+# that works with mutt
+#set query_command="abook --datafile ~/Dropbox/addressbook --mutt-query '%s'"
+#macro index \ca '<shell-escape>abook --datafile ~/Dropbox/addressbook<enter>'
+#macro pager A |'abook --datafile ~/Dropbox/addressbook --add-email'\n
+set query_command="goobook query '%s'"
+#bind editor <Tab> complete-query
+
+#Add contacts to google
+#macro index,pager a "goobook add" "add the sender address to Google contacts"
+
+#Reload goobook db
+#macro index,pager gr "!goobook reload\n" "Goobook reload"
+#======================================================#
+
+# MIME
+#======================================================#
+set mime_forward=yes
+alternative_order text/plain text/html
+auto_view text/html application/x-gunzip application/postscript image/gif application/x-tar-gz
+#======================================================#
