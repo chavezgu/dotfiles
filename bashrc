@@ -6,8 +6,11 @@ set -o vi
 
 PATH=$PATH:$HOME/bin:.
 
+#Aliases
 alias ls='ls --color=auto'
 alias t='task'
+alias chavezgu="ssh chavezgu.com"
+
 PS1='[\u@\h \t \W][$(task count status:pending)]\$ '
 
 complete -cf sudo
