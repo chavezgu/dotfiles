@@ -10,6 +10,7 @@ PATH=$PATH:$HOME/bin:.
 alias ls='ls --color=auto'
 alias t='task'
 alias chavezgu="ssh chavezgu.com"
+alias svim="sudo vim"
 
 PS1='[\u@\h \t \W][$(task count status:pending)]\$ '
 
