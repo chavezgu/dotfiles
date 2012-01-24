@@ -11,6 +11,7 @@ alias ls='ls --color=auto'
 alias t='task'
 alias chavezgu="ssh chavezgu.com"
 alias gultec="ssh gchavez@linux.mty.itesm.mx"
+alias svim="sudo vim"
 
 PS1='[\u@\h \t \W][$(task count status:pending)]\$ '
 
