@@ -30,7 +30,6 @@ let mapleader = ","
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pathogen
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 call pathogen#infect()
 
 
@@ -81,6 +80,8 @@ set noerrorbells
 set novisualbell
 set tm=500
 
+"A red column indicating the 85 width limit
+set colorcolumn=85
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -136,8 +137,9 @@ set shiftwidth=4
 set tabstop=4
 set smarttab
 
-set lbr
-set tw=500
+
+set lbr "Line break
+set tw=500 "Text width
 
 set ai "Auto indent
 set si "Smart indet
@@ -157,7 +159,15 @@ nnoremap <leader>g :GundoToggle<CR>
 nmap <silent> <leader>s :set spl=es spell!<CR>
 " Toggle english spell checking
 nmap <silent> <leader>n :set spl=en spell!<CR>
-set colorcolumn=85
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Window Movement
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" easier navigation between split windows
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-latex suite

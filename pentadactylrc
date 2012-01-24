@@ -5,3 +5,6 @@ set hintkeys=asdfjkl
 
 " toggle menu toolbar
 nmap <C-F1> :set guioptions!=m<CR>
+
+"Ignore google sites
+:autocmd LocationChange ^https?://(reader|mail)\.google\.com/ :normal! <C-z>
