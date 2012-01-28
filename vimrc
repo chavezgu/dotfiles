@@ -4,13 +4,8 @@
 " This is for my personal use. It was inspired by amix vimrc
 " http://http://amix.dk/vim/vimrc.html
 "
-" Plugins_installed:
+" Plugins_installed through pacman:
 "	> vim-snipmate
-"		You can make vim behaves like the Textmate editor
-"	> NERDtree
-"		File viewer side-pane
-"	> vim-rails
-"		A plugin to improve the development of Ruby on rails
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General

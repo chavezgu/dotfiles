@@ -25,5 +25,11 @@ export EDITOR="vim -f"
 
 #functions
 function mkdircd () { 
-mkdir -p "$@" && eval cd "\"\$$#\"";
+    mkdir -p "$@" && eval cd "\"\$$#\"";
+}
+
+upvimplugins() {
+    cd ~/dotfiles; 
+    git submodule foreach git pull origin master;
+    cd -;
 }
