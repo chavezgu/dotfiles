@@ -1,10 +1,11 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: Gabriel Chavez 
-" Version: 1.1 - 10/03/11 
+" Version: 1.5 - Sat Jan 28 17:49:48 CST 2012
 " This is for my personal use. It was inspired by amix vimrc
 " http://http://amix.dk/vim/vimrc.html
 "
 " Plugins_installed through pacman:
+"   > vim-nerdcommenter
 "	> vim-snipmate
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -53,7 +54,7 @@ set so=7
 
 set ruler "Always show current position
 
-set cmdheight=2 "The commandbar height
+"set cmdheight=2 "The commandbar height
 
 set hid "Change buffer - without saving
 
@@ -77,6 +78,9 @@ set tm=500
 
 "A red column indicating the 85 width limit
 set colorcolumn=85
+
+"Display the status bar always
+set laststatus=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts

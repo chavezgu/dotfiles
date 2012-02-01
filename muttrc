@@ -1,7 +1,8 @@
 #======================================================#
 # Boring details
 set from = "gabrielchavez02@gmail.com"
-alternates "gabomagno@gmail.com|gabriel@chavezgu.com"
+alternates "gabomagno@gmail.com|gabriel@chavezgu.com|\
+gabriel@chavezgu.com|me@chavezgu.com|root@chavezgu.com"
 set realname = "Gabriel Chávez"
 set use_from = yes
 set envelope_from ="yes"
@@ -27,7 +28,9 @@ set spoolfile   = "+INBOX"
 set postponed   = "+drafts"
 set mbox        = "+archive"
 unset record
-mailboxes +INBOX +archive +sent +drafts +spam +trash +amorcito +awesome
+mailboxes +INBOX +archive +sent +drafts +trash +amorcito +awesome \
++facebook +ayuda-gultec +blackboard +bolsa-trabajo +cmus +GTK +Humble \
++linkedin +mailman-gultec +mutt +papa +rhythmbox-dev +proyecto-integrador
 unset record
 
 #======================================================#
@@ -37,6 +40,12 @@ subscribe gtk-app-devel-list@gnome.org
 subscribe mutt-users@mutt.org
 subscribe cmus-devel@lists.sourceforge.net
 subscribe rhythmbox-devel@gnome.org
+lists mutt-users
+subscribe mutt-users
+set followup_to=yes        # Sets 'Mail-Followup-To' header
+set honor_followup_to=yes  
+fcc-hook mutt-user +mutt   # See your own posts using fcc
+
 #======================================================#
 
 #======================================================#
@@ -58,7 +67,7 @@ hdr_order Date: From: User-Agent: X-Mailer X-Operating-System To: \
 #======================================================#
 # which editor do you want to use? 
 # vim of course!
-set editor="gvim -f -c 'set tw=70 et' '+/^$' " 
+set editor="vim -c 'set tw=70 et' '+/^$' " 
 set edit_headers=yes      # See the headers when editing
 
 #======================================================#
@@ -74,15 +83,6 @@ set sort_alias=alias                 # Sort alphabetically
 source ~/mutt/colors            # In their own file 
 
 #======================================================#
-# Lists: An example using the mutt-users list:
-
-lists mutt-users
-subscribe mutt-users
-set followup_to=yes        # Sets 'Mail-Followup-To' header
-set honor_followup_to=yes  
-fcc-hook mutt-user +mutt   # See your own posts using fcc
-
-#======================================================#
 # Odds and ends
 
 set markers          # mark wrapped lines of text in the pager with a +
@@ -94,4 +94,8 @@ push <show-version>  # Shows mutt version at startup
 
 #======================================================#
 # Macros
-macro index,pager I '<shell-escape> fetchmail -v<enter>'
+macro index,pager I '<shell-escape> offlineimap<enter>'
+
+# Query
+#======================================================#
+set query_command = "/usr/local/bin/goocaa %s"
