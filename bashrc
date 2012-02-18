@@ -23,6 +23,9 @@ complete -cf man
 export BROWSER="firefox"
 export EDITOR="vim -f"
 
+#ssh agent
+eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+
 #functions
 function mkdircd () { 
     mkdir -p "$@" && eval cd "\"\$$#\"";
