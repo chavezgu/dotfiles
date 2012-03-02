@@ -22,6 +22,8 @@ complete -cf man
 
 export BROWSER="firefox"
 export EDITOR="vim -f"
+export HISTCONTROL=ignoredups #ignore duplicates in bash history
+export HISTSIZE=2000
 
 #ssh agent
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
