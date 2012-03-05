@@ -1,4 +1,4 @@
-#Vi mode
+#Vi mode 
 set -o vi
 
 # Check for an interactive session
@@ -7,6 +7,7 @@ set -o vi
 #enviroment variables
 PATH=$PATH:$HOME/bin:.
 CDPATH=.:~:~/Projects:/etc
+TERM='xterm-256color'
 
 #Aliases
 alias ls='ls --color=auto'
@@ -23,8 +24,10 @@ complete -cf man
 
 export BROWSER="firefox"
 export EDITOR="vim -f"
-export HISTCONTROL=ignoredups #ignore duplicates in bash history
 export HISTSIZE=2000
+export HISTCONTROL=ignoreboth #ignore both duplicates and ignore in bash history
+export HISTIGNORE='ls:bg:fg:history'
+export HISTTIMEFORMAT='%F %T '
 
 #ssh agent
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
