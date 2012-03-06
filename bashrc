@@ -7,7 +7,6 @@ set -o vi
 #enviroment variables
 PATH=$PATH:$HOME/bin:.
 CDPATH=.:~:~/Projects:/etc
-TERM='xterm-256color'
 
 #Aliases
 alias ls='ls --color=auto'
