@@ -30,7 +30,8 @@ set mbox        = "+archive"
 unset record
 mailboxes +INBOX +archive +sent +drafts +trash +amorcito +awesome \
 +facebook +ayuda-gultec +blackboard +bolsa-trabajo +cmus +GTK +Humble \
-+linkedin +mailman-gultec +mutt +papa +rhythmbox-dev +proyecto-integrador
++linkedin +mailman-gultec +mutt +papa +rhythmbox-dev +proyecto-integrador \
++oldboy
 unset record
 
 #======================================================#
