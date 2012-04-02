@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="rkj-repos"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -35,6 +35,7 @@ plugins=(git archlinux vi-mode python)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 
+export CDPATH=.:~:~/Projects:/etc
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/share/java/apache-ant/bin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/gabomagno/bin:.:/home/gabomagno/bin:.
