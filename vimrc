@@ -3,10 +3,6 @@
 " Version: 1.5 - Sat Jan 28 17:49:48 CST 2012
 " This is for my personal use. It was inspired by amix vimrc
 " http://http://amix.dk/vim/vimrc.html
-"
-" Plugins_installed through pacman:
-"   > vim-nerdcommenter
-"	> vim-snipmate
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
