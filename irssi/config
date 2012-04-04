@@ -110,6 +110,7 @@ chatnets = {
 
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
+  { name = "#gultec"; chatnet = "fn"; autojoin = "Yes"; },
   { name = "silc"; chatnet = "silc"; autojoin = "No"; }
 );
 
