@@ -35,7 +35,7 @@ plugins=(git archlinux vi-mode python lein taskwarrior mercurial)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 
-#export CDPATH=.:~:~/Projects:/etc
+export CDPATH=.:~:~/Projects:/etc
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/share/java/apache-ant/bin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/gabomagno/bin:.:/home/gabomagno/bin:.
