@@ -26,3 +26,7 @@
 	path = vim/bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
     ignore = dirty
+[submodule "vim/bundle/autoclose"]
+	path = vim/bundle/autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+    ignore = dirty
