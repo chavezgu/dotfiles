@@ -1,21 +1,28 @@
 [submodule "vim/bundle/command-t"]
 	path = vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+    ignore = dirty
 [submodule "vim/bundle/c.vim"]
 	path = vim/bundle/c.vim
 	url = git://github.com/vim-scripts/c.vim.git
+    ignore = dirty
 [submodule "vim/bundle/gundo"]
 	path = vim/bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
+    ignore = dirty
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+    ignore = dirty
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+    ignore = dirty
 [submodule "vim/bundle/powerline"]
 	path = vim/bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+    ignore = dirty
 [submodule "vim/bundle/minibufexpl"]
 	path = vim/bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
+    ignore = dirty
