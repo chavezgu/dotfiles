@@ -34,3 +34,7 @@
 	path = vim/bundle/slimv
 	url = https://github.com/vim-scripts/slimv.vim.git
     ignore = dirty
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+    ignore = dirty
