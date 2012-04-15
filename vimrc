@@ -178,4 +178,4 @@ let g:tex_flavor = "latex"
 " => ctags
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <f12> :!ctags -R<cr>
-
+nmap <F8> :TlistToggle <CR>
