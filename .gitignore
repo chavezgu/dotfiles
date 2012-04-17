@@ -1,2 +1,4 @@
 *~
+weechat/logs/*
+weechat/weechat.log
 *.swp
