@@ -122,6 +122,9 @@ vnoremap <F1> <ESC>
 "Editing my vimrc
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
+"No more reaching for the Esc key 
+imap jj <Esc>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
