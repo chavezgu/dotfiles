@@ -96,6 +96,8 @@ push <show-version>  # Shows mutt version at startup
 #======================================================#
 # Macros
 macro index,pager I '<shell-escape> offlineimap<enter>'
+macro index M "T.*\n;WN" "Mark all messages as read"
+
 
 # Query
 #======================================================#
