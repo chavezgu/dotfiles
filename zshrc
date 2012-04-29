@@ -11,6 +11,8 @@ ZSH_THEME="rkj-repos"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# History search
+bindkey '^R' history-incremental-search-backward
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
