@@ -9,6 +9,9 @@ set hintchars=hjklasdf
 " Edit the pentadactylrc 
 nnoremap <Leader>ev :!gvim $HOME/.vimperatorrc<CR>
 
+"No more reaching for the Esc key 
+imap jj <Esc>
+
 " Faster
 nnoremap j 3j
 nnoremap k 3k
