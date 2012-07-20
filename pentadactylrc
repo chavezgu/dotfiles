@@ -1,23 +1,20 @@
-set mapleader=","
+let mapleader=","
 
 " use the listed characters to enumerate quickhint elements
-set hintkeys=asdfjkl
-
-" toggle menu toolbar
-nmap <C-F1> :set guioptions!=m<CR>
+set hintchars=hjklasdf
 
 " set duckduckgo as the main search engine. 
-set defsearch=duckduckgo
+" set defsearch=duckduckgo
 
 " Edit the pentadactylrc 
-nnoremap <Leader>ev :!gvim $HOME/.pentadactylrc<CR>
+nnoremap <Leader>ev :!gvim $HOME/.vimperatorrc<CR>
 
 " Faster
 nnoremap j 3j
 nnoremap k 3k
 
 " Play Flash
-nnoremap <Leader>f :flashplay<CR>
+" nnoremap <Leader>f :flashplay<CR>
 
 "Ignore google sites
-:autocmd LocationChange ^https?://(reader|mail)\.google\.com/ :normal! <C-z>
+" :autocmd LocationChange ^https?://(reader|mail)\.google\.com/ :normal! <C-z>
