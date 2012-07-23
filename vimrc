@@ -182,3 +182,6 @@ let g:tex_flavor = "latex"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <f12> :!ctags -R<cr>
 nmap <F8> :TlistToggle <CR>
+
+" slime support
+let g:slime_target = "tmux"
