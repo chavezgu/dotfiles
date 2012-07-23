@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/gabomagno/.offlineimap'
 let g:netrw_dirhist_2='/opt/lampp/htdocs/ITCDCV/protected/controllers'
 let g:netrw_dirhist_3='/opt/lampp/htdocs/ITCDCV/protected'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/gabomagno/devenv'
 let g:netrw_dirhist_6='/home/gabomagno/Dropbox'
 let g:netrw_dirhist_7='/home/gabomagno'
 let g:netrw_dirhist_8='/home/gabomagno/.oh-my-zsh'
+let g:netrw_dirhist_9='/home/chavezgu/.offlineimap'
