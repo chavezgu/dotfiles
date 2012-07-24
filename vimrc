@@ -81,11 +81,9 @@ set laststatus=2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable "Enable syntax hl
 
-" Really good coloscheme. Similar to Textmate's
-colorscheme solarized
 
 " Solarized colorscheme. It has two modes: light and dark.
-"set background=dark 
+set background=dark 
 "colorscheme solarized
 
 "Mustang colorscheme
