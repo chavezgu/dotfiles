@@ -64,11 +64,12 @@ unignore Date: From: User-Agent: X-Mailer X-Operating-System To: \
 hdr_order Date: From: User-Agent: X-Mailer X-Operating-System To: \
         Cc: Reply-To: Subject: Mail-Followup-To:
                        
+set fast_reply = yes
 
 #======================================================#
 # which editor do you want to use? 
 # vim of course!
-set editor="gvim -f -c 'set tw=70 et' '+/^$' " 
+set editor="vim -f -c 'set tw=70 et' '+/^$' " 
 set edit_headers=yes      # See the headers when editing
 
 #======================================================#
