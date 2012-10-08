@@ -3,7 +3,7 @@
 set from = "gabrielchavez02@gmail.com"
 alternates "gabomagno@gmail.com|gabriel@chavezgu.com|\
 gabriel@chavezgu.com|me@chavezgu.com|root@chavezgu.com"
-set realname = "Gabriel Chávez"
+set realname = "Gabriel Chavez"
 set use_from = yes
 set envelope_from ="yes"
 set sort = 'threads'
