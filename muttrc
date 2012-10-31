@@ -28,12 +28,13 @@ set spoolfile   = "+INBOX"
 set postponed   = "+drafts"
 set mbox        = "+archive"
 unset record
-mailboxes +INBOX +archive +sent +drafts +trash +amorcito +awesome \
-+facebook +gultec +blackboard +bolsa-trabajo +cmus +GTK +Humble \
-+linkedin +papa +rhythmbox-dev +proyecto-integrador \
-+oldboy
-unset record
-
+mailboxes +INBOX +Sent +all_mail +amorcito +arch +archive +awesome \
++ayuda-gultec +blackboard +bolsa-trabajo +cmus +coursera  \
++drafts +facebook +flagged +foursquare +gnu +google+  \
++groupalia +gtk +gultec +humble +ign +linkedin +mailman-gultec \
++mutt +oldboy +papa +personal +proyecto-integrador +receipts \
++rhythmbox +rhythmbox-dev +sent +serviciobecario +skeptic +starred \
++travel +tut +work 
 #======================================================#
 #Mailing lists
 subscribe awesome@naquadah.org
@@ -98,8 +99,17 @@ push <show-version>  # Shows mutt version at startup
 # Macros
 macro index,pager I '<shell-escape> offlineimap<enter>'
 macro index M "T.*\n;WN" "Mark all messages as read"
+macro index S "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py  ~/Mail/temporary/search<enter><change-folder-readonly>+temporary/search<enter>"  "search mail (using notmuch)"
+
 
 
 # Query
 #======================================================#
 set query_command = "/usr/local/bin/goocaa %s"
+
+# Hooks
+#======================================================#
+message-hook '~t "gabriel.chavezgutierrez@tut.fi"'  \
+        'set from="gabriel.chavezgutierrez@tut.fi"'
+        message-hook '!(~t "gabriel.chavezgutierrez@tut.fi")'  \
+            'set from="gabrielchavez02@gmail.com"'
