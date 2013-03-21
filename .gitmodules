@@ -30,10 +30,6 @@
 	path = vim/bundle/autoclose
 	url = https://github.com/Townk/vim-autoclose.git
     ignore = dirty
-[submodule "vim/bundle/slimv"]
-	path = vim/bundle/slimv
-	url = https://github.com/vim-scripts/slimv.vim.git
-    ignore = dirty
 [submodule "vim/bundle/ack"]
 	path = vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
@@ -48,4 +44,4 @@
     ignore = dirty
 [submodule "vim/bundle/vimclojure"]
 	path = vim/bundle/vimclojure
-	url = https://github.com/jpalardy/vim-slime.git
+	url = https://github.com/vim-scripts/VimClojure.git
