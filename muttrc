@@ -1,7 +1,7 @@
 #======================================================#
 # Boring details
-set from = "gabrielchavez02@gmail.com"
-alternates "gabomagno@gmail.com|gabriel@chavezgu.com|\
+set from = "gabriel@chavezgu.com"
+alternates "gabomagno@gmail.com|gabrielchavez02@gmail.com|\
 gabriel@chavezgu.com|me@chavezgu.com|root@chavezgu.com"
 set realname = "Gabriel Chavez"
 set use_from = yes
