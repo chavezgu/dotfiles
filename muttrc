@@ -34,11 +34,7 @@ unset record
 source ~/mutt/mailboxes
 #======================================================#
 #Mailing lists
-subscribe awesome@naquadah.org
-subscribe gtk-app-devel-list@gnome.org
 subscribe mutt-users@mutt.org
-subscribe cmus-devel@lists.sourceforge.net
-subscribe rhythmbox-devel@gnome.org
 lists mutt-users
 subscribe mutt-users
 set followup_to=yes        # Sets 'Mail-Followup-To' header
