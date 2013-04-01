@@ -39,5 +39,4 @@ source $HOME/.aliases
 
 export CDPATH=.:~:~/Projects:/etc
 
-# Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/share/java/apache-ant/bin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/chavezgu/bin:.
+export PATH=$HOME/bin:$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
