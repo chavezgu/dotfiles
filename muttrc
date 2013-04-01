@@ -114,7 +114,9 @@ macro index <F8> "<enter-command>unset wait_key<enter><shell-escape>notmuch-mutt
 
 # Query
 #======================================================#
-set query_command = "/usr/local/bin/goocaa %s"
+set query_command= "goobook query '%s'"  
+bind editor <Tab> complete-query  
+macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts" 
 
 # Hooks
 #======================================================#
