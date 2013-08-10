@@ -60,6 +60,8 @@ set hlsearch "Highlight search things
 set incsearch "Make search act like search in modern browsers
 set nolazyredraw "Don't redraw while executing macros 
 
+nmap <leader>q :nohlsearch<CR>
+
 set magic "Set magic on, for regular expressions
 
 set showmatch "Show matching bracets when text indicator is over them
