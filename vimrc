@@ -228,3 +228,9 @@ cnoremap <Esc>b <S-Left>
 cnoremap <Esc>f <S-Right>
 cnoremap <Esc>d <S-right><Delete>
 cnoremap <C-g>  <C-c>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERDTree bindings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <Leader>e :NERDTreeToggle<CR>
+
