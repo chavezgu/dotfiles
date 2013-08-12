@@ -44,6 +44,15 @@ Bundle  'sjl/gundo.vim'
 Bundle  'fholgado/minibufexpl.vim'
 Bundle  'ashwin/vim-powerline'
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ctrl-P
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<Leader>t'
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable filetype plugin
 if has("autocmd")
