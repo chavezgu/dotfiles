@@ -24,6 +24,27 @@ call pathogen#infect()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vundle
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype off                   " required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" Repos from github
+Bundle  'kien/ctrlp.vim'
+Bundle  'scrooloose/syntastic'
+Bundle  'scrooloose/nerdtree'
+Bundle  'scrooloose/nerdcommenter'
+Bundle  'tpope/vim-fugitive'
+Bundle  'sjl/gundo.vim'
+Bundle  'fholgado/minibufexpl.vim'
+Bundle  'ashwin/vim-powerline'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable filetype plugin
 if has("autocmd")
     filetype plugin indent on
