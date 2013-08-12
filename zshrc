@@ -39,4 +39,9 @@ source $HOME/.aliases
 
 export CDPATH=.:~:~/Projects:/etc
 
-export PATH=$HOME/bin:$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+if [ -f /usr/bin/virtualenvwrapper.sh ] ; then
+    . /usr/bin/virtualenvwrapper.sh
+fi
+
+source $HOME/.rvm/scripts/rvm
+export PATH=$HOME/bin:$HOME/.rvm/bin:$PATH:. # Add RVM to PATH for scripting
