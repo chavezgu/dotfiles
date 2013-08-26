@@ -43,6 +43,7 @@ Bundle  'tpope/vim-fugitive'
 Bundle  'sjl/gundo.vim'
 Bundle  'fholgado/minibufexpl.vim'
 Bundle  'ashwin/vim-powerline'
+Bundle  'wlangstroth/vim-racket'
 
 
 
