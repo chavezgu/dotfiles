@@ -45,6 +45,7 @@ Bundle  'sjl/gundo.vim'
 Bundle  'fholgado/minibufexpl.vim'
 Bundle  'ashwin/vim-powerline'
 Bundle  'wlangstroth/vim-racket'
+Bundle  'plasticboy/vim-markdown'
 
 
 
@@ -240,3 +241,8 @@ nmap <Leader>e :NERDTreeToggle<CR>
 " => MBE settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Leader>mbt :MBEToggle<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-markdown
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_markdown_folding_disabled=1
