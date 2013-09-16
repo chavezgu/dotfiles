@@ -46,6 +46,7 @@ Bundle  'fholgado/minibufexpl.vim'
 Bundle  'ashwin/vim-powerline'
 Bundle  'wlangstroth/vim-racket'
 Bundle  'plasticboy/vim-markdown'
+Bundle  'godlygeek/tabular'
 
 
 
