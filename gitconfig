@@ -11,3 +11,5 @@
     noff = merge --no-ff
     unstage = reset HEAD --
     last = log -1 HEAD
+[merge]
+    tool = vimdiff
