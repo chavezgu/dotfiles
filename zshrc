@@ -32,7 +32,7 @@ bindkey '^R' history-incremental-search-backward
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git archlinux vi-mode python rvm lein taskwarrior ssh-agent gpg-agent systemd tmux)
+plugins=(git archlinux python rvm lein taskwarrior ssh-agent gpg-agent systemd tmux)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
