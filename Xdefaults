@@ -26,6 +26,6 @@ URxvt*urgentOnBell: true
 !# then use shift+down arrow to create tabs and shift+{left,right} arrows to switch between them
 URxvt.perl-ext:      default,url-select,clipboard
 URxvt.keysym.M-u:    perl:url-select:select_next
-URxvt.urlLauncher:   firefox
-URxvt.underlineURLs: true
+URxvt.url-select.launcher:   /usr/bin/chromium
+URxvt.url-select.underline: true
 
