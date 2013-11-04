@@ -47,6 +47,7 @@ Bundle  'ashwin/vim-powerline'
 Bundle  'wlangstroth/vim-racket'
 Bundle  'plasticboy/vim-markdown'
 Bundle  'godlygeek/tabular'
+Bundle  'tpope/vim-rails'
 
 
 
