@@ -119,9 +119,9 @@ syntax enable "Enable syntax hl
 
 
 " Solarized colorscheme. It has two modes: light and dark.
-"set background=dark 
-"colorscheme solarized
-colorscheme molokai
+set background=dark 
+colorscheme solarized
+"colorscheme molokai
 
 "Mustang colorscheme
 "colorscheme mustang
