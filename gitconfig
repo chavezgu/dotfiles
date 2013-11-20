@@ -15,3 +15,5 @@
     tool = vimdiff
 [color]
     ui = auto
+[core]
+	excludesfile = /home/chavezgu/.gitignore
