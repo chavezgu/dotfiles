@@ -37,7 +37,6 @@ Bundle 'gmarik/vundle'
 " Repos from github
 Bundle  'kien/ctrlp.vim'
 Bundle  'scrooloose/syntastic'
-Bundle  'scrooloose/nerdtree'
 Bundle  'scrooloose/nerdcommenter'
 Bundle  'tpope/vim-fugitive'
 Bundle  'tpope/vim-surround'
