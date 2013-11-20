@@ -1,6 +1,6 @@
-text/html;                      links %s; nametemplate=%s.html
+text/html;                      chromium %s; nametemplate=%s.html
 text/html;                      links -dump %s; nametemplate=%s.html; copiousoutput
-image/*;      firefox %s;
+image/*;      chromium %s;
 application/vnd.ms-powerpoint; libreoffice %s;
 video/*;        mplayer %s;
 application/x-gunzip;   gzcat; copiousoutput
