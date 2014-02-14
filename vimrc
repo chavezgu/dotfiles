@@ -44,10 +44,10 @@ Bundle  'sjl/gundo.vim'
 Bundle  'fholgado/minibufexpl.vim'
 Bundle  'ashwin/vim-powerline'
 Bundle  'wlangstroth/vim-racket'
-Bundle  'plasticboy/vim-markdown'
 Bundle  'godlygeek/tabular'
 Bundle  'tpope/vim-rails'
 
+Bundle  'plasticboy/vim-markdown'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
