@@ -34,6 +34,9 @@ bindkey '^R' history-incremental-search-backward
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git archlinux python rvm lein ssh-agent gpg-agent systemd tmux pass docker)
 
+export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
+export LESS='-R '
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 
