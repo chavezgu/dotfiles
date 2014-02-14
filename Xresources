@@ -24,12 +24,9 @@ URxvt.lineSpace:            0
 URxvt.intensityStyles:      false
  
 ! Fonts
-URxvt*font: xft:Inconsolata:pixelsize=14:antialias=true:autohinting=true
-URxvt*boldFont: xft:Inconsolata:bold:pixelsize=14:antialias=true:autohinting=true
+URxvt*font: xft:Inconsolata:pixelsize=16:antialias=true:autohinting=true
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=16:antialias=true:autohinting=true
 
-! Fix font space
-URxvt*letterSpace: -1
- 
 ! Scrollbar
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
@@ -39,12 +36,12 @@ URxvt.perl-ext:      default,url-select,clipboard
 URxvt.keysym.M-u:    perl:url-select:select_next
 URxvt.url-select.launcher:   /usr/bin/chromium
 URxvt.url-select.underline: true
- 
+
 ! Cursor
 URxvt.cursorBlink:          true
 URxvt.cursorColor:          #657b83
 URxvt.cursorUnderline:      false
- 
+
 ! Pointer
 URxvt.pointerBlank:         true
 
