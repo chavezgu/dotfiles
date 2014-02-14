@@ -46,9 +46,10 @@ Bundle  'ashwin/vim-powerline'
 Bundle  'wlangstroth/vim-racket'
 Bundle  'godlygeek/tabular'
 Bundle  'tpope/vim-rails'
-
 Bundle  'jelera/vim-javascript-syntax'
 Bundle  'plasticboy/vim-markdown'
+Bundle  'tpope/vim-repeat'
+Bundle  'altercation/vim-colors-solarized'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
