@@ -34,7 +34,7 @@ URxvt.scrollBar:            false
 ! Perl extensions
 URxvt.perl-ext:      default,url-select,clipboard
 URxvt.keysym.M-u:    perl:url-select:select_next
-URxvt.url-select.launcher:   /usr/bin/chromium
+URxvt.url-select.launcher:   /usr/bin/firefox
 URxvt.url-select.underline: true
 
 ! Cursor
