@@ -108,8 +108,8 @@ set noerrorbells
 set novisualbell
 set tm=500
 
-"A red column indicating the 85 width limit
-set colorcolumn=85
+"A red column indicating the 79 width limit
+set colorcolumn=79
 
 "Display the status bar always
 set laststatus=2
