@@ -1,0 +1,4 @@
+inoremap jj <ESC>
+set autoindent
+set ignorecase
+set smartcase
