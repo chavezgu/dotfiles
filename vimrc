@@ -56,7 +56,7 @@ Bundle  'altercation/vim-colors-solarized'
 " => Ctrl-P
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_map = '<Leader>e'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
