@@ -9,3 +9,8 @@ setl lispwords+=define-values,opt-lambda,case-lambda,syntax-rules,with-syntax,sy
 setl lispwords+=define-signature,unit,unit/sig,compund-unit/sig,define-values/invoke-unit/sig
 setl lispwords+=for
 setl lisp
+
+" Set mappings to execute and test the buffers.
+" TODO: Change it so the mappings can be set in vimrc.
+nmap <leader>t :!raco test %<CR>
+nmap <leader>r :!racket %<CR>
