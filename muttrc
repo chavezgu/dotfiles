@@ -116,4 +116,5 @@ set crypt_use_gpgme = yes
 # Hooks
 #======================================================#
 folder-hook =chavezgu source ~/mutt/chavezgu
+folder-hook =amorcito source ~/mutt/chavezgu
 folder-hook =tut      source ~/mutt/tut
