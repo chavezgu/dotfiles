@@ -159,3 +159,8 @@
 (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
 (add-hook 'scheme-mode-hook           #'enable-paredit-mode)
 (add-hook 'racket-mode-hook           #'enable-paredit-mode)
+
+;; Default C++ is ugly.
+
+(setq c-default-style "stroustrup"
+      c-basic-offset 4)
