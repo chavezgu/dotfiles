@@ -36,21 +36,17 @@ Bundle 'gmarik/vundle'
 
 " Repos from github
 Bundle  'kien/ctrlp.vim'
-Bundle  'scrooloose/syntastic'
 Bundle  'scrooloose/nerdcommenter'
 Bundle  'tpope/vim-fugitive'
+Bundle  'tpope/vim-haml'
 Bundle  'tpope/vim-surround'
-Bundle  'sjl/gundo.vim'
-Bundle  'fholgado/minibufexpl.vim'
 Bundle  'ashwin/vim-powerline'
 Bundle  'chavezgu/vim-racket'
 Bundle  'godlygeek/tabular'
 Bundle  'tpope/vim-rails'
-Bundle  'jelera/vim-javascript-syntax'
-Bundle  'plasticboy/vim-markdown'
 Bundle  'tpope/vim-repeat'
-Bundle  'altercation/vim-colors-solarized'
-
+Bundle  'pangloss/vim-javascript'
+Bundle  'moll/vim-node'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ctrl-P
@@ -98,6 +94,7 @@ set nolazyredraw "Don't redraw while executing macros
 
 nmap <leader>q :nohlsearch<CR>
 
+nnoremap <leader><leader> <c-^>
 set magic "Set magic on, for regular expressions
 
 set showmatch "Show matching bracets when text indicator is over them
@@ -121,18 +118,18 @@ syntax enable "Enable syntax hl
 
 
 " Solarized colorscheme. It has two modes: light and dark.
-set background=dark 
-colorscheme solarized
-"colorscheme molokai
+"set background=dark 
+"colorscheme solarized
+colorscheme molokai
 
 "Mustang colorscheme
 "colorscheme mustang
 
 "line numbers. I guess
-"set nu
+set nu
 
-"set relative line number. Really usefull for vim commands!
-set relativenumber
+"TOO SLOW! set relative line number. Really usefull for vim commands! 
+" set relativenumber
 
 set encoding=utf8
 
@@ -180,10 +177,6 @@ set wrap "Wrap lines
 
 set nopaste "Disables annoying vim deafult behaviour when pasting
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Gundo plugin
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>g :GundoToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
@@ -248,6 +241,6 @@ let g:vim_markdown_folding_disabled=1
 " => Custom Autocmd's
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 augroup lang
-  autocmd FileType racket,ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
+  autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
 augroup end
