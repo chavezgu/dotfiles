@@ -27,12 +27,12 @@ call pathogen#infect()
 " => Vundle
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 " Repos from github
 Bundle  'kien/ctrlp.vim'
@@ -46,6 +46,7 @@ Bundle  'tpope/vim-repeat'
 Bundle  'pangloss/vim-javascript'
 Bundle  'moll/vim-node'
 
+call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ctrl-P
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
