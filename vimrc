@@ -47,6 +47,9 @@ Bundle  'pangloss/vim-javascript'
 Bundle  'moll/vim-node'
 Bundle  'fholgado/minibufexpl.vim'
 Bundle  'othree/javascript-libraries-syntax.vim'
+Bundle  'Townk/vim-autoclose'
+Bundle  'vim-scripts/closetag.vim'
+Bundle  'edsono/vim-matchit'
 
 call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
