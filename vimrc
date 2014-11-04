@@ -45,6 +45,7 @@ Bundle  'godlygeek/tabular'
 Bundle  'tpope/vim-repeat'
 Bundle  'pangloss/vim-javascript'
 Bundle  'moll/vim-node'
+Bundle  'fholgado/minibufexpl.vim'
 
 call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
