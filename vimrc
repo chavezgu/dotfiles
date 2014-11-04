@@ -46,6 +46,7 @@ Bundle  'tpope/vim-repeat'
 Bundle  'pangloss/vim-javascript'
 Bundle  'moll/vim-node'
 Bundle  'fholgado/minibufexpl.vim'
+Bundle  'othree/javascript-libraries-syntax.vim'
 
 call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
