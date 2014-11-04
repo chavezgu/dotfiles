@@ -21,3 +21,6 @@ nnoremap k 3k
 
 "Ignore google sites
 " :autocmd LocationChange ^https?://(reader|mail)\.google\.com/ :normal! <C-z>
+
+" No need for navigation bar
+set gui=nonavigation
