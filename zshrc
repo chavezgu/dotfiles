@@ -51,7 +51,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="$HOME/bin:$HOME:/home/chavezgu/progfun-scala/sbt/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl"
+export PATH=".:$HOME/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
