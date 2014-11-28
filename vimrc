@@ -1,13 +1,6 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: Gabriel Chavez 
-" Version: Tue Apr  3 23:01:04 CDT 2012
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
 set nocompatible
 
 " Sets how many lines of history VIM has to remember
@@ -16,55 +9,38 @@ set history=700
 "Change the mapleader from '\' to ','
 let mapleader = ","
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Pathogen
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#infect()
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype off                   " required!
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle
-" required! 
 Bundle 'gmarik/Vundle.vim'
-
+"
 " Repos from github
-Bundle  'kien/ctrlp.vim'
-Bundle  'scrooloose/nerdcommenter'
-Bundle  'tpope/vim-fugitive'
-Bundle  'tpope/vim-haml'
-Bundle  'tpope/vim-surround'
-Bundle  'ashwin/vim-powerline'
-Bundle  'godlygeek/tabular'
-Bundle  'tpope/vim-repeat'
-Bundle  'pangloss/vim-javascript'
-Bundle  'moll/vim-node'
-Bundle  'fholgado/minibufexpl.vim'
-Bundle  'othree/javascript-libraries-syntax.vim'
-Bundle  'Townk/vim-autoclose'
-Bundle  'vim-scripts/closetag.vim'
-Bundle  'edsono/vim-matchit'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'bling/vim-airline'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-markdown'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Ctrl-P
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Ctrl-P
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<Leader>e'
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable filetype plugin
 if has("autocmd")
     filetype plugin indent on
 endif
-
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -76,33 +52,43 @@ set autoread
 " Set the wild menu
 set wildmenu
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => VIM user interface
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the curors - when moving vertical..
 set so=7
 
-set ruler "Always show current position
+" Always show current position
+set ruler 
 
-"set cmdheight=2 "The commandbar height
+" The commandbar height
+"set cmdheight=2 
 
-set hid "Change buffer - without saving
+" Change buffer - without saving
+set hid 
 
-set ignorecase "Ignore case when searching
+" Ignore case when searching
+set ignorecase 
 set smartcase
 
-set hlsearch "Highlight search things
+"Highlight search things
+set hlsearch 
 
-set incsearch "Make search act like search in modern browsers
-set nolazyredraw "Don't redraw while executing macros 
+"Make search act like search in modern browsers
+set incsearch 
+"Don't redraw while executing macros 
+
+set nolazyredraw 
 
 nmap <leader>q :nohlsearch<CR>
 
 nnoremap <leader><leader> <c-^>
-set magic "Set magic on, for regular expressions
 
-set showmatch "Show matching bracets when text indicator is over them
-set mat=2 "How many tenths of a second to blink
+"Set magic on, for regular expressions
+set magic 
+
+"Show matching bracets when text indicator is over them
+set showmatch 
+
+"How many tenths of a second to blink
+set mat=2 
 
 " No sound on errors
 set noerrorbells
@@ -114,12 +100,9 @@ set colorcolumn=79
 
 "Display the status bar always
 set laststatus=2
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors and Fonts
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax enable "Enable syntax hl
-
+"
+"Enable syntax hl
+syntax enable 
 
 " Solarized colorscheme. It has two modes: light and dark.
 "set background=dark 
@@ -137,10 +120,8 @@ set nu
 
 set encoding=utf8
 
+" Good use of Vim and modifying normal behavior
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Good use of Vim and modifying normal behavior
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -163,63 +144,55 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 "No more reaching for the Esc key 
 imap jj <Esc>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Text, tab and indent related
 set expandtab
 set shiftwidth=4
 set tabstop=4
 set smarttab
 
+"Line break
+set lbr 
 
-set lbr "Line break
-set tw=500 "Text width
+"Text width
+set tw=500 
 
-set ai "Auto indent
-set si "Smart indet
-set wrap "Wrap lines
+"Auto indent
+set ai 
+
+"Smart indet
+set si 
+
+"Wrap lines
+set wrap 
 
 set nopaste "Disables annoying vim deafult behaviour when pasting
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Spell checking
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Spell checking
 " Toggle spell checking on and off with `,s` for Spanish
 nmap <silent> <leader>s :set spl=es spell!<CR>
 " Toggle english spell checking
 nmap <silent> <leader>n :set spl=en spell!<CR>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Window Movement
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" easier navigation between split windows
+" Window Movement, easier navigation between split windows
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Easy yanking and pasting from system clipboard
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Easy yanking and pasting from system clipboard
 noremap <leader>y "+y
 noremap <leader>p "+p
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-latex suite
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"
+" vim-latex suite
+" set grepprg=grep\ -nH\ $*
+" let g:tex_flavor = "latex"
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ctags
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ctags
 nnoremap <f12> :!ctags -R<cr>
 nmap <F8> :TlistToggle <CR>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Emacs-style momevement for the vim command line
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Emacs-style momevement for the vim command line
 cnoremap <C-a>  <Home>
 cnoremap <C-b>  <Left>
 cnoremap <C-f>  <Right>
@@ -232,19 +205,24 @@ cnoremap <Esc>f <S-Right>
 cnoremap <Esc>d <S-right><Delete>
 cnoremap <C-g>  <C-c>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => MBE settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Leader>mbt :MBEToggle<cr>
+" MBE settings
+" map <Leader>mbt :MBEToggle<cr>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-markdown
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:vim_markdown_folding_disabled=1
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Custom Autocmd's
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-augroup lang
-  autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set ai sw=2 sts=2 et
-  autocmd FileType python set sw=4 sts=4 et
-augroup end
+" let g:vim_markdown_folding_disabled=1
+
+" Custom Autocmd's
+" augroup lang
+" autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set ai sw=2 sts=2 et
+" autocmd FileType python set sw=4 sts=4 et
+" augroup end
+
+" Syntastic
+let g:syntastic_javascript_checkers = ['gjslint']
+
+" Ultisnips
+" Trigger configuration. 
+" Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<C-a>"
+let g:UltiSnipsJumpForwardTrigger="<C-b>"
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"

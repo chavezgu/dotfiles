@@ -1,10 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/chavezgu/Dropbox/Consumption'
-let g:netrw_dirhist_2='/home/chavezgu/.oh-my-zsh'
-let g:netrw_dirhist_3='/home/chavezgu/Dropbox/mutt'
-let g:netrw_dirhist_4='/home/chavezgu/.oh-my-zsh/plugins/rvm'
-let g:netrw_dirhist_5='/home/chavezgu/.mutt'
-let g:netrw_dirhist_6='/home/chavezgu/Dropbox/Learning/racket'
-let g:netrw_dirhist_7='/home/chavezgu/dotfiles'
-let g:netrw_dirhist_8='/home/chavezgu/dotfiles/config'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/chavezgu/projects/sugusjs/.git'
+let g:netrw_dirhist_2='/home/chavezgu/projects/cometa/graphhopper/app/modules'
+let g:netrw_dirhist_3='/home/chavezgu/projects/cometa/graphhopper/app/bower_components'
