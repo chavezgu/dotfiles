@@ -212,10 +212,10 @@ cnoremap <C-g>  <C-c>
 " let g:vim_markdown_folding_disabled=1
 
 " Custom Autocmd's
-" augroup lang
-" autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set ai sw=2 sts=2 et
-" autocmd FileType python set sw=4 sts=4 et
-" augroup end
+ augroup lang
+ autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set ai sw=2 sts=2 et
+ autocmd FileType python set sw=4 sts=4 et
+ augroup end
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['gjslint']
