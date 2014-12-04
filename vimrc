@@ -226,3 +226,6 @@ let g:syntastic_javascript_checkers = ['gjslint']
 let g:UltiSnipsExpandTrigger="<C-a>"
 let g:UltiSnipsJumpForwardTrigger="<C-b>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+
+" We use NERDTree now
+nmap <Leader>t :NERDTreeToggle<cr>
