@@ -9,12 +9,43 @@ set envelope_from ="yes"
 set sort = 'threads'
 set sort_aux = 'reverse-last-date-received'
 set sort_re
+set uncollapse_jump   
 alternative_order text/plain text/html
 auto_view text/html
-#======================================================#
+
+# Sidebar Patch --------------------------------------
+set sidebar_delim   = '  │'
+set sidebar_visible = yes
+set sidebar_width   = 35
+color sidebar_new color221 color233
+
+# Sidebar Navigation ---------------------------------
+bind index,pager <down>   sidebar-next
+bind index,pager <up>     sidebar-prev
+bind index,pager <right>  sidebar-open
+bind index R  group-reply
+
+
+# Index Key Bindings ---------------------------------
+bind index gg       first-entry
+bind index G        last-entry
+bind index <space>  collapse-thread
+bind pager R  group-reply
+
+
+# Pager Key Bindings ---------------------------------
+bind pager k  previous-line
+bind pager j  next-line
+bind pager gg top
+bind pager G  bottom
+
+bind pager R  group-reply
+
+# View attachments properly.
+bind attach <return> view-mailcap
 
 # Use a signature
-set signature="~/mutt/signature"
+set signature="~/.mutt/signature"
 
 # Use msmtp rather than sendmail. Check that 
 # the path is correct for your system:
@@ -31,7 +62,7 @@ set postponed   = "+drafts"
 set mbox        = "+archive"
 unset record
 #mailboxes
-source ~/mutt/mailboxes
+source ~/.mutt/mailboxes
 #======================================================#
 #Mailing lists
 subscribe mutt-users@mutt.org
@@ -53,39 +84,42 @@ set message_cache_clean = no
 # What to show and order of headers
 ignore *
 unignore Date: From: User-Agent: X-Mailer X-Operating-System To: \
-         Cc: Reply-To: Subject: Mail-Followup-To:
+Cc: Reply-To: Subject: Mail-Followup-To:
 hdr_order Date: From: User-Agent: X-Mailer X-Operating-System To: \
-        Cc: Reply-To: Subject: Mail-Followup-To:
-                       
+Cc: Reply-To: Subject: Mail-Followup-To:
+
 set fast_reply = yes
 
 #======================================================#
 # which editor do you want to use? 
 # vim of course!
-set editor="vim -f -c 'set tw=70 et' '+/^$' " 
+set editor="vim -f -c 'set tw=72 et' '+/^$' " 
 set edit_headers=yes      # See the headers when editing
 
 #======================================================#
 # Aliases
 
-set alias_file = ~/mutt/aliases # In their own file
-source ~/mutt/aliases           # Source them
+set alias_file = ~/.mutt/aliases # In their own file
+source ~/.mutt/aliases           # Source them
 set sort_alias=alias                 # Sort alphabetically
 
 #======================================================#
 # Colours: defaults are a little bleak so experiment!
 
 #source ~/mutt/colors            # In their own file 
-source ~/mutt/mutt-colors-solarized-dark-256.muttrc
+source ~/.mutt/mutt-colors-solarized-dark-256.muttrc
 
 #======================================================#
 # Odds and ends
-set markers          # mark wrapped lines of text in the pager with a +
+unset markers          # mark wrapped lines of text in the pager with a +
 set smart_wrap       # Don't wrap mid-word
 set pager_context=5  # Retain 5 lines of previous page when scrolling.
-set pager_index_lines= 15 # how large is the index window?
-set status_on_top    # Status bar on top.
-push <show-version>  # Shows mutt version at startup
+set pager_index_lines=10 # how large is the index window?
+
+# Status Bar -----------------------------------------
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
 
 #======================================================#
 # Macros
@@ -103,18 +137,12 @@ bind editor <Tab> complete-query
 macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts" 
 
 #======================================================#
-#PGP 
-set pgp_sign_as = 39D5D193
-
-#Let's use PGP
-set crypt_use_gpgme = yes
-
 # Use GPGME
 set crypt_use_gpgme = yes
 #======================================================#
 
 # Hooks
 #======================================================#
-folder-hook =chavezgu source ~/mutt/chavezgu
-folder-hook =amorcito source ~/mutt/chavezgu
-folder-hook =tut      source ~/mutt/tut
+folder-hook =chavezgu source ~/.mutt/chavezgu
+folder-hook =amorcito source ~/.mutt/chavezgu
+folder-hook =tut      source ~/.mutt/tut
