@@ -132,9 +132,6 @@ macro index <F9> "<enter-command>unset wait_key<enter><enter-command>unignore me
 
 # Query
 #======================================================#
-set query_command= "goobook query '%s'"  
-bind editor <Tab> complete-query  
-macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts" 
 
 #======================================================#
 # Use GPGME
