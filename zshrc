@@ -49,9 +49,10 @@ plugins=(git archlinux systemd tmux ssh-agent pass gpg-agent)
 
 # User configuration
 
-export PATH=".:$HOME/bin:$PATH"
-
+export PATH=".:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
