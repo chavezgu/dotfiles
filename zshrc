@@ -80,4 +80,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
 
+# exports
+export BROWSER="firefox"
+export EDITOR="vim"
+export RI="--format ansi --width 70"
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
