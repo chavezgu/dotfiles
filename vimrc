@@ -27,6 +27,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-markdown'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 
@@ -188,7 +189,7 @@ noremap <leader>p "+p
 
 " ctags
 nnoremap <f12> :!ctags -R<cr>
-nmap <F8> :TlistToggle <CR>
+nmap <leader>b :TagbarToggle <CR>
 
 " Emacs-style momevement for the vim command line
 cnoremap <C-a>  <Home>
@@ -202,9 +203,6 @@ cnoremap <Esc>b <S-Left>
 cnoremap <Esc>f <S-Right>
 cnoremap <Esc>d <S-right><Delete>
 cnoremap <C-g>  <C-c>
-
-" MBE settings
-" map <Leader>mbt :MBEToggle<cr>
 
 " => vim-markdown
 " let g:vim_markdown_folding_disabled=1
