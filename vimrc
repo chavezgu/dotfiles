@@ -28,6 +28,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'majutsushi/tagbar'
+Plugin 'faith/vim-go'
 
 call vundle#end()
 
