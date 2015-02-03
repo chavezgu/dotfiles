@@ -85,10 +85,14 @@ export BROWSER="firefox"
 export EDITOR="vim"
 export RI="--format ansi --width 70"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export NVM_DIR="/home/chavezgu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
+
+# Go
+export GOPATH=$HOME/projects/go
+
+export PATH="$PATH:$HOME/.rvm/bin:$GOPATH/bin"
