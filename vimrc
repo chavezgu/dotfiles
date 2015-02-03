@@ -214,9 +214,6 @@ cnoremap <C-g>  <C-c>
  autocmd FileType python set sw=4 sts=4 et
  augroup end
 
-" Syntastic
-let g:syntastic_javascript_checkers = ['gjslint']
-
 " Ultisnips
 " Trigger configuration. 
 " Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
