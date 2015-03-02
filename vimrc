@@ -28,7 +28,10 @@ Plugin 'tpope/vim-markdown'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'majutsushi/tagbar'
-Plugin 'faith/vim-go'
+Plugin 'fatih/vim-go'
+Plugin 'Raimondi/delimitMate'
+Plugin 'mileszs/ack.vim'
+
 
 call vundle#end()
 
@@ -223,3 +226,6 @@ let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " We use NERDTree now
 nmap <Leader>t :NERDTreeToggle<cr>
+
+" vim-go settings
+au FileType go nmap <leader>r <Plug>(go-run)
