@@ -107,7 +107,7 @@ set sort_alias=alias                 # Sort alphabetically
 # Colours: defaults are a little bleak so experiment!
 
 #source ~/mutt/colors            # In their own file 
-source ~/.mutt/mutt-colors-solarized-dark-256.muttrc
+source ~/.mutt/mutt-colors-solarized-dark-transparent.muttrc
 
 #======================================================#
 # Odds and ends
