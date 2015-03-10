@@ -16,4 +16,5 @@
 [color]
     ui = auto
 [core]
+    editor = vim
 	excludesfile = /home/chavezgu/.gitignore
