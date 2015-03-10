@@ -29,7 +29,6 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
-Plugin 'mileszs/ack.vim'
 
 " Color schemes!
 Plugin 'tomasr/molokai'
