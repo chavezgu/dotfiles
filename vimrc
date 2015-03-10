@@ -32,6 +32,8 @@ Plugin 'fatih/vim-go'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mileszs/ack.vim'
 
+" Color schemes!
+Plugin 'tomasr/molokai'
 
 call vundle#end()
 
