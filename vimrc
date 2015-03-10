@@ -28,7 +28,6 @@ Plugin 'tpope/vim-markdown'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'majutsushi/tagbar'
-Plugin 'fatih/vim-go'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mileszs/ack.vim'
 
