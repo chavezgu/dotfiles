@@ -147,9 +147,10 @@ imap jj <Esc>
 
 " Text, tab and indent related
 set expandtab
-set shiftwidth=4
-set tabstop=4
-set smarttab
+set shiftwidth=8
+set tabstop=8
+set softtabstop=8
+set nosmarttab
 
 "Line break
 set lbr 
