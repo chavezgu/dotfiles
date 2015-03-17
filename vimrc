@@ -212,8 +212,8 @@ cnoremap <C-g>  <C-c>
 
 " Custom Autocmd's
  augroup lang
- autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set ai sw=2 sts=2 et
- autocmd FileType python set sw=4 sts=4 et
+ autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set ai sw=2 sts=2 ts=2 et
+ autocmd FileType python set sw=4 sts=4 ts=4 et
  augroup end
 
 " Ultisnips
