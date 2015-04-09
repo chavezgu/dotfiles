@@ -1,4 +1,4 @@
-" Maintainer: Gabriel Chavez 
+" Maintainer: Gabriel Chavez
 
 " Use Vim settings, rather than Vi settings (much better!).
 set nocompatible
@@ -47,7 +47,7 @@ endif
 set autoread
 
 " Set to the current directory when a file is opened
-" Seems to be a little incompatible with command+t 
+" Seems to be a little incompatible with command+t
 "set autochdir
 
 " Set the wild menu
@@ -57,39 +57,39 @@ set wildmenu
 set so=7
 
 " Always show current position
-set ruler 
+set ruler
 
 " The commandbar height
-"set cmdheight=2 
+"set cmdheight=2
 
 " Change buffer - without saving
-set hid 
+set hid
 
 " Ignore case when searching
-set ignorecase 
+set ignorecase
 set smartcase
 
 "Highlight search things
-set hlsearch 
+set hlsearch
 
 "Make search act like search in modern browsers
-set incsearch 
-"Don't redraw while executing macros 
+set incsearch
+"Don't redraw while executing macros
 
-set nolazyredraw 
+set nolazyredraw
 
 nmap <leader>q :nohlsearch<CR>
 
 nnoremap <leader><leader> <c-^>
 
 "Set magic on, for regular expressions
-set magic 
+set magic
 
 "Show matching bracets when text indicator is over them
-set showmatch 
+set showmatch
 
 "How many tenths of a second to blink
-set mat=2 
+set mat=2
 
 " No sound on errors
 set noerrorbells
@@ -103,10 +103,10 @@ set colorcolumn=80
 set laststatus=2
 "
 "Enable syntax hl
-syntax enable 
+syntax enable
 
 " Solarized colorscheme. It has two modes: light and dark.
-"set background=dark 
+"set background=dark
 "colorscheme solarized
 colorscheme molokai
 
@@ -116,7 +116,7 @@ colorscheme molokai
 "line numbers. I guess
 set nu
 
-"TOO SLOW! set relative line number. Really usefull for vim commands! 
+"TOO SLOW! set relative line number. Really usefull for vim commands!
 " set relativenumber
 
 set encoding=utf8
@@ -142,7 +142,7 @@ vnoremap <F1> <ESC>
 "Editing my vimrc
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
-"No more reaching for the Esc key 
+"No more reaching for the Esc key
 imap jj <Esc>
 
 " Text, tab and indent related
@@ -153,19 +153,19 @@ set softtabstop=8
 set nosmarttab
 
 "Line break
-set lbr 
+set lbr
 
 "Text width
-set tw=500 
+set tw=500
 
 "Auto indent
-set ai 
+set ai
 
 "Smart indet
-set si 
+set si
 
 "Wrap lines
-set wrap 
+set wrap
 
 set nopaste "Disables annoying vim deafult behaviour when pasting
 
@@ -217,7 +217,7 @@ cnoremap <C-g>  <C-c>
  augroup end
 
 " Ultisnips
-" Trigger configuration. 
+" Trigger configuration.
 " Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<C-b>"
