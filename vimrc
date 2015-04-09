@@ -225,6 +225,3 @@ let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " We use NERDTree now
 nmap <Leader>t :NERDTreeToggle<cr>
-
-" vim-go settings
-au FileType go nmap <leader>r <Plug>(go-run)
