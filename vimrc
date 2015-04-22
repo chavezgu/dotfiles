@@ -216,6 +216,9 @@ autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set a
 autocmd FileType python set sw=4 sts=4 ts=4 et
 augroup end
 
+" Force markdown on *.md files.
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 " Ultisnips
 " Trigger configuration.
 " Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
