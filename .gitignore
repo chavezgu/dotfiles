@@ -4,3 +4,7 @@ weechat/weechat.log
 *.swp
 bin/password.txt
 bin/hma-vpn
+xmonad/xmonad-x86_64-linux
+xmonad/xmonad.errors
+xmonad/xmonad.hi
+xmonad/xmonad.o
