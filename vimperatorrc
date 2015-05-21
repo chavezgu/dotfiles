@@ -24,3 +24,6 @@ nnoremap k 3k
 
 " No need for navigation bar
 set gui=none
+
+" Remove highlight
+nnoremap <leader>q :nohlsearch<CR>
