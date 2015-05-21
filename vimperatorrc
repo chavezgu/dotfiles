@@ -23,4 +23,4 @@ nnoremap k 3k
 " :autocmd LocationChange ^https?://(reader|mail)\.google\.com/ :normal! <C-z>
 
 " No need for navigation bar
-set gui=nonavigation
+set gui=none
