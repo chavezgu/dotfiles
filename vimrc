@@ -28,6 +28,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mileszs/ack.vim'
+Plugin 'fatih/vim-go'
 
 " Color schemes!
 Plugin 'tomasr/molokai'
@@ -233,3 +234,9 @@ nmap <Leader>t :NERDTreeToggle<cr>
 " Navigate through warnings
 map <F2> :cnext<CR>
 map <S-F2> :cprev<CR>
+
+" Some go mappings
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
