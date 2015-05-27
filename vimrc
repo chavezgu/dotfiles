@@ -229,7 +229,7 @@ let g:UltiSnipsJumpForwardTrigger="<C-b>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " We use NERDTree now
-nmap <Leader>t :NERDTreeToggle<cr>
+nmap <Leader>fs :NERDTreeToggle<cr>
 
 " Navigate through warnings
 map <F2> :cnext<CR>
