@@ -186,7 +186,7 @@ nnoremap <c-l> <c-w>l
 
 " Easy yanking and pasting from system clipboard
 noremap <leader>y "+y
-noremap <leader>p "+p
+noremap <leader>p :set paste<CR>"+p:set paste!<CR>
 
 " vim-latex suite
 " set grepprg=grep\ -nH\ $*
