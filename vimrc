@@ -240,3 +240,12 @@ au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>m <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
+
+" Some fugitive mappings
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gw :Gwrite<CR>
+noremap <leader>gr :Gread<CR>
+noremap <leader>gd :Gvdiff<CR>
+noremap <leader>gt :Gsplit! diff --staged<CR>
+noremap <leader>gc :Gcommit -v<CR>
+noremap <leader>go :Git checkout<Space>
