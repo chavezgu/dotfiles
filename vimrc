@@ -249,3 +249,7 @@ noremap <leader>gd :Gvdiff<CR>
 noremap <leader>gt :Gsplit! diff --staged<CR>
 noremap <leader>gc :Gcommit -v<CR>
 noremap <leader>go :Git checkout<Space>
+
+" Make vim an IDE
+noremap <leader>id :NERDTreeToggle<CR>:TagbarToggle<CR>
+
