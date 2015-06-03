@@ -37,8 +37,9 @@ call vundle#end()
 
 " Ctrl-P
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_map = '<Leader>e'
-
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_working_path_mode = 'a'
+noremap <leader>e :CtrlPBuffer<CR>
 
 " Enable filetype plugin
 if has("autocmd")
