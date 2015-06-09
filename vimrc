@@ -238,8 +238,8 @@ let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 nmap <Leader>fs :NERDTreeToggle<cr>
 
 " Navigate through warnings
-map <F2> :cnext<CR>
-map <S-F2> :cprev<CR>
+map <c-n> :cnext<CR>
+map <c-p> :cprev<CR>
 
 " Some go mappings
 au FileType go nmap <leader>r <Plug>(go-run)
