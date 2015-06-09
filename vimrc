@@ -84,6 +84,7 @@ set nolazyredraw
 "Remove highlight
 nmap <leader>n :nohlsearch<CR>
 
+"Easy transition between files.
 nnoremap <leader><leader> <c-^>
 
 "Set magic on, for regular expressions
