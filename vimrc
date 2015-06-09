@@ -81,7 +81,8 @@ set incsearch
 
 set nolazyredraw
 
-nmap <leader>q :nohlsearch<CR>
+"Remove highlight
+nmap <leader>n :nohlsearch<CR>
 
 nnoremap <leader><leader> <c-^>
 
