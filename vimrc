@@ -87,6 +87,9 @@ nmap <leader>n :nohlsearch<CR>
 "Easy transition between files.
 nnoremap <leader><leader> <c-^>
 
+"Easy ack
+nnoremap <leader>a :Ack<Space>
+
 "Set magic on, for regular expressions
 set magic
 
