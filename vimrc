@@ -245,7 +245,6 @@ map <c-p> :cprev<CR>
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>m <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
 
 " Some fugitive mappings
 noremap <leader>gs :Gstatus<CR>
