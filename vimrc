@@ -7,7 +7,7 @@ set nocompatible
 set history=700
 
 "Change the mapleader from '\' to ','
-let mapleader = ","
+let mapleader = "\<Space>"
 
 filetype off                   " required!
 set rtp+=~/.vim/bundle/Vundle.vim
