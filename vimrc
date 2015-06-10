@@ -82,7 +82,7 @@ set incsearch
 set nolazyredraw
 
 "Remove highlight
-nmap <leader>n :nohlsearch<CR>
+nmap <leader>nh :nohlsearch<CR>
 
 "Easy transition between files.
 nnoremap <leader><leader> <c-^>
