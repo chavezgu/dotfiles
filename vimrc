@@ -180,9 +180,9 @@ set nopaste "Disables annoying vim deafult behaviour when pasting
 
 " Spell checking
 " Toggle spell checking on and off with `,s` for Spanish
-nmap <silent> <leader>s :set spl=es spell!<CR>
+nmap <silent> <leader>ss :set spl=es spell!<CR>
 " Toggle english spell checking
-nmap <silent> <leader>n :set spl=en spell!<CR>
+nmap <silent> <leader>se :set spl=en spell!<CR>
 
 " Window Movement, easier navigation between split windows
 nnoremap <c-j> <c-w>j
