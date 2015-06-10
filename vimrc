@@ -29,6 +29,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mileszs/ack.vim'
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-rsi'
 
 " Color schemes!
 Plugin 'tomasr/molokai'
@@ -198,19 +199,6 @@ noremap <leader>p :set paste<CR>"+p:set paste!<CR>
 " ctags
 nnoremap <f12> :!ctags -R<cr>
 nmap <leader>b :TagbarToggle <CR>
-
-" Emacs-style momevement for the vim command line
-cnoremap <C-a>  <Home>
-cnoremap <C-b>  <Left>
-cnoremap <C-f>  <Right>
-cnoremap <C-d>  <Delete>
-cnoremap <M-b>  <S-Left>
-cnoremap <M-f>  <S-Right>
-cnoremap <M-d>  <S-right><Delete>
-cnoremap <Esc>b <S-Left>
-cnoremap <Esc>f <S-Right>
-cnoremap <Esc>d <S-right><Delete>
-cnoremap <C-g>  <C-c>
 
 " => vim-markdown
 " let g:vim_markdown_folding_disabled=1
