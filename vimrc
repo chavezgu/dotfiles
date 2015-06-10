@@ -147,9 +147,6 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-"Editing my vimrc
-nnoremap <leader>ev :e $MYVIMRC<cr>
-
 "No more reaching for the Esc key
 imap jj <Esc>
 
