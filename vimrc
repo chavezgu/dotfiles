@@ -28,7 +28,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mileszs/ack.vim'
 Plugin 'fatih/vim-go'
-Plugin 'tpope/vim-rsi'
 Plugin 'tpope/vim-commentary'
 
 " Color schemes!
