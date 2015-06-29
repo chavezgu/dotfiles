@@ -64,6 +64,7 @@
 (evil-set-initial-state 'shell-mode 'emacs)
 (evil-set-initial-state 'lisp-interaction-mode 'emacs)
 (evil-set-initial-state 'dired-mode 'emacs)
+(evil-set-initial-state 'calculator 'emacs)
 ;; (evil-set-initial-state 'inferior-emacs-lisp-mode 'emacs)
 ;; (evil-set-initial-state 'racket-repl-mode 'emacs)
 
