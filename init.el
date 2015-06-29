@@ -96,8 +96,10 @@
  '(default ((t (:family "Inconsolata" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
 
 ;; Some c-mode stuff
-;; (setq c-default-style "linux")
-(setq c-basic-offset "linux")
+(defun my-c-mode-hook ()
+(setq c-basic-offset 4)
+(setq indent-tabs-mode nil))
+(add-hook 'c-mode-hook 'my-c-mode-hook)
 
 ;; Snippets
 (add-to-list 'load-path
