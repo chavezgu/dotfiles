@@ -115,3 +115,6 @@
 
 ;; It's magit!
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; Compile
+(global-set-key (kbd "C-x c") 'compile)
