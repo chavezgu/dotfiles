@@ -4,7 +4,7 @@
   (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
   )
 
-(load-theme 'solarized-dark t)
+(load-theme 'monokai t)
 
 (setq-default inhibit-startup-screen t)
 
