@@ -96,7 +96,7 @@
 
 ;; Some c-mode stuff
 ;; (setq c-default-style "linux")
-(setq c-basic-offset"linux")
+(setq c-basic-offset "linux")
 
 ;; Snippets
 (add-to-list 'load-path
