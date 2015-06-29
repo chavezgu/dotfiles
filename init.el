@@ -109,3 +109,6 @@
 
 ;; Use electric pair
 (electric-pair-mode 1)
+
+;; It's magit!
+(global-set-key (kbd "C-x g") 'magit-status)
