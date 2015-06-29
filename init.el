@@ -95,6 +95,12 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Inconsolata" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
 
+;; Set window layout
+(progn
+  (split-window-horizontally)
+  (split-window-vertically)
+  (other-window 1)
+  (shell))
 ;; Some c-mode stuff
 (defun my-c-mode-hook ()
 (setq c-basic-offset 4)
