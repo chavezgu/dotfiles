@@ -146,8 +146,6 @@
 ;; It's magit!
 (global-set-key (kbd "C-x g") 'magit-status)
 
-;; Compile
-(global-set-key (kbd "C-x c") 'compile)
 
 ;; Helm!
 (require 'helm-config)
@@ -156,3 +154,5 @@
 (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 
+;; Compile
+(global-set-key (kbd "C-x c") 'recompile)
