@@ -43,20 +43,20 @@
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
 ;; Evil mode: Vim rocks.
-(require 'evil)
-(evil-mode 1)
-(setq key-chord-two-keys-delay 0.5)
-(key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
-(key-chord-mode 1)
+;; (require 'evil)
+;; (evil-mode 1)
+;; (setq key-chord-two-keys-delay 0.5)
+;; (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+;; (key-chord-mode 1)
 ;; Exit insert mode by pressing j and then j quickly
 ;; (setq key-chord-two-keys-delay 0.5)
 
 ;; Don't use evil with repls
-(evil-set-initial-state 'eshell-mode 'emacs)
-(evil-set-initial-state 'shell-mode 'emacs)
-(evil-set-initial-state 'lisp-interaction-mode 'emacs)
-(evil-set-initial-state 'dired-mode 'emacs)
-(evil-set-initial-state 'calculator 'emacs)
+;; (evil-set-initial-state 'eshell-mode 'emacs)
+;; (evil-set-initial-state 'shell-mode 'emacs)
+;; (evil-set-initial-state 'lisp-interaction-mode 'emacs)
+;; (evil-set-initial-state 'dired-mode 'emacs)
+;; (evil-set-initial-state 'calculator 'emacs)
 ;; (evil-set-initial-state 'inferior-emacs-lisp-mode 'emacs)
 ;; (evil-set-initial-state 'racket-repl-mode 'emacs)
 
