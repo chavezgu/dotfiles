@@ -88,11 +88,13 @@
  '(default ((t (:family "Inconsolata" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
 
 ;; Set window layout
+
 (progn
   (split-window-horizontally)
   (split-window-vertically)
   (other-window 1)
-  (shell))
+  (eshell))
+
 
 ; GRB: open temporary buffers in a dedicated window split
 (setq special-display-regexps
