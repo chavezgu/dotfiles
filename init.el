@@ -149,5 +149,3 @@
 ;; Compile
 (global-set-key (kbd "C-x c") 'compile)
 
-;; Emacs as a server!
-(server-start)
