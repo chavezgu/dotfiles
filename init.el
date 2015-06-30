@@ -116,6 +116,7 @@
           "^\\*.* output\\*$"           ; tex compilation buffer
           "^\\*input/output of .*\\*$"
           "^\\*Man .*\\*$"
+          "^\\*magit .*\\*$"
           "^\\*TeX Help\\*$"
           "^\\*Shell Command Output\\*$"
           "^\\*Async Shell Command\\*$"
