@@ -95,8 +95,6 @@
   (other-window 1)
   (eshell))
 
-
-                                        ; GRB: open temporary buffers in a dedicated window split
 (setq special-display-regexps
       '("^\\*Completions\\*$"
         "^\\*Help\\*$"
@@ -116,7 +114,7 @@
         "^\\*.* output\\*$"           ; tex compilation buffer
         "^\\*input/output of .*\\*$"
         "^\\*Man .*\\*$"
-        "^\\*magit .*\\*$"
+        "^\\*magit\:.*\\*$"
         "^\\*TeX Help\\*$"
         "^\\*Shell Command Output\\*$"
         "^\\*Async Shell Command\\*$"
