@@ -117,3 +117,9 @@
 
 ;; Compile
 (global-set-key (kbd "C-c c") 'recompile)
+
+;; Get to know the major mode name from a buffer
+(defun buffer-mode (buffer-or-string)
+  "Returns the major mode associated with a buffer."
+  (with-current-buffer buffer-or-string
+     major-mode))
