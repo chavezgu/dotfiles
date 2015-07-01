@@ -128,10 +128,8 @@
 (setq special-display-function #'grb-special-display)
 
 ;; Some c-mode stuff
-(defun my-c-mode-hook ()
-  (setq c-basic-offset 4)
-  (setq indent-tabs-mode nil))
-(add-hook 'c-mode-hook 'my-c-mode-hook)
+(setq c-default-style "linux")
+
 
 ;; Snippets
 ;; (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
