@@ -53,6 +53,7 @@
 ;; Don't use evil with repls
 (evil-set-initial-state 'eshell-mode 'emacs)
 (evil-set-initial-state 'shell-mode 'emacs)
+(evil-set-initial-state 'term-mode 'emacs)
 (evil-set-initial-state 'lisp-interaction-mode 'emacs)
 (evil-set-initial-state 'dired-mode 'emacs)
 (evil-set-initial-state 'calculator 'emacs)
