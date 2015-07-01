@@ -86,46 +86,6 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Inconsolata" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
 
-;; Set window layout
-
-(progn
-  (split-window-horizontally)
-  (split-window-vertically)
-  (other-window 1)
-  (eshell))
-
-(setq special-display-regexps
-      '("^\\*Completions\\*$"
-        "^\\*Help\\*$"
-        "^\\*grep\\*$"
-        "^\\*Apropos\\*$"
-        "^\\*elisp macroexpansion\\*$"
-        "^\\*local variables\\*$"
-        "^\\*Compile-Log\\*$"
-        "^\\*Quail Completions\\*$"
-        "^\\*Occur\\*$"
-        "^\\*frequencies\\*$"
-        "^\\*compilation\\*$"
-        "^\\*Locate\\*$"
-        "^\\*Colors\\*$"
-        "^\\*tumme-display-image\\*$"
-        "^\\*SLIME Description\\*$"
-        "^\\*.* output\\*$"           ; tex compilation buffer
-        "^\\*input/output of .*\\*$"
-        "^\\*Man .*\\*$"
-        "^\\*magit\:.*\\*$"
-        "^\\*TeX Help\\*$"
-        "^\\*Shell Command Output\\*$"
-        "^\\*Async Shell Command\\*$"
-        "^\\*Backtrace\\*$"))
-
-(setq grb-temporary-window (nth 2 (window-list)))
-(defun grb-special-display (buffer &optional data)
-  (let ((window grb-temporary-window))
-    (with-selected-window window
-      (switch-to-buffer buffer)
-      window)))
-(setq special-display-function #'grb-special-display)
 
 ;; Some c-mode stuff
 (setq c-default-style "linux")
