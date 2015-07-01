@@ -143,10 +143,6 @@ nnoremap <c-l> <c-w>l
 noremap <leader>y "+y
 noremap <leader>p :set paste<CR>"+p:set paste!<CR>
 
-" vim-latex suite
-" set grepprg=grep\ -nH\ $*
-" let g:tex_flavor = "latex"
-
 " Text, tab and indent related
 set expandtab
 set shiftwidth=8
