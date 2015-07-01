@@ -59,6 +59,7 @@
 (evil-set-initial-state 'calculator 'emacs)
 (evil-set-initial-state 'inferior-emacs-lisp-mode 'emacs)
 (evil-set-initial-state 'racket-repl-mode 'emacs)
+(evil-set-initial-state 'gud-mode 'emacs)
 
 ;; GRB: use C-o and M-o to switch windows
 (global-set-key "\M-o" 'other-window)
