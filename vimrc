@@ -149,7 +149,7 @@ noremap <leader>p :set paste<CR>"+p:set paste!<CR>
 
 " Text, tab and indent related
 set expandtab
-set shiftwidth=4
+set shiftwidth=8
 set tabstop=8
 set softtabstop=8
 set nosmarttab
