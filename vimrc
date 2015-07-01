@@ -9,38 +9,6 @@ set history=700
 "Change the mapleader from '\' to ','
 let mapleader = "\<Space>"
 
-filetype off                   " required!
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle
-Bundle 'gmarik/Vundle.vim'
-"
-" Repos from github
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'majutsushi/tagbar'
-Plugin 'Raimondi/delimitMate'
-Plugin 'mileszs/ack.vim'
-Plugin 'fatih/vim-go'
-Plugin 'tpope/vim-commentary'
-
-" Color schemes!
-Plugin 'tomasr/molokai'
-
-call vundle#end()
-
-" Ctrl-P
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_map = '<leader>o'
-let g:ctrlp_working_path_mode = 'a'
-noremap <leader>e :CtrlPBuffer<CR>
-
 " Enable filetype plugin
 if has("autocmd")
     filetype plugin indent on
@@ -87,9 +55,6 @@ nmap <leader>nh :nohlsearch<CR>
 "Easy transition between files.
 nnoremap <leader><leader> <c-^>
 
-"Easy ack
-nnoremap <leader>a :Ack<Space>
-
 "Set magic on, for regular expressions
 set magic
 
@@ -113,13 +78,8 @@ set laststatus=2
 "Enable syntax hl
 syntax enable
 
-" Solarized colorscheme. It has two modes: light and dark.
-"set background=dark
-"colorscheme solarized
+" Set molokai colors
 colorscheme molokai
-
-"Mustang colorscheme
-"colorscheme mustang
 
 "line numbers. I guess
 set nu
@@ -150,13 +110,6 @@ vnoremap <F1> <ESC>
 "No more reaching for the Esc key
 imap jj <Esc>
 
-" Text, tab and indent related
-set expandtab
-set shiftwidth=8
-set tabstop=8
-set softtabstop=8
-set nosmarttab
-
 "Line break
 set lbr
 
@@ -173,7 +126,6 @@ set si
 set wrap
 
 set nopaste "Disables annoying vim deafult behaviour when pasting
-
 
 " Spell checking
 " Toggle spell checking on and off with `,s` for Spanish
@@ -195,12 +147,12 @@ noremap <leader>p :set paste<CR>"+p:set paste!<CR>
 " set grepprg=grep\ -nH\ $*
 " let g:tex_flavor = "latex"
 
-" ctags
-nnoremap <f12> :!ctags -R<cr>
-nmap <leader>b :TagbarToggle <CR>
-
-" => vim-markdown
-" let g:vim_markdown_folding_disabled=1
+" Text, tab and indent related
+set expandtab
+set shiftwidth=4
+set tabstop=8
+set softtabstop=8
+set nosmarttab
 
 " Custom Autocmd's
 augroup lang
@@ -208,36 +160,6 @@ autocmd FileType racket,ruby,haml,eruby,scss,yaml,html,javascript,cucumber set a
 autocmd FileType python set sw=4 sts=4 ts=4 et
 augroup end
 
-" Force markdown on *.md files.
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-" Ultisnips
-" Trigger configuration.
-" Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-b>"
-let g:UltiSnipsJumpBackwardTrigger="<C-z>"
-
-" We use NERDTree now
-nmap <Leader>fs :NERDTreeToggle<cr>
-
-" Navigate through warnings
-map <c-n> :cnext<CR>
-map <c-p> :cprev<CR>
-
-" Some go mappings
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>m <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-
-" Some fugitive mappings
-noremap <leader>gs :Gstatus<CR>
-noremap <leader>gw :Gwrite<CR>
-noremap <leader>gr :Gread<CR>
-noremap <leader>gd :Gvdiff<CR>
-noremap <leader>gt :Gsplit! diff --staged<CR>
-noremap <leader>gc :Gcommit -v<CR>
-noremap <leader>go :Git checkout<Space>
 
 " Quit faster
 "noremap <leader>q :q!<CR>
