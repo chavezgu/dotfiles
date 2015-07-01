@@ -96,31 +96,31 @@
   (eshell))
 
 
-; GRB: open temporary buffers in a dedicated window split
+                                        ; GRB: open temporary buffers in a dedicated window split
 (setq special-display-regexps
-        '("^\\*Completions\\*$"
-          "^\\*Help\\*$"
-          "^\\*grep\\*$"
-          "^\\*Apropos\\*$"
-          "^\\*elisp macroexpansion\\*$"
-          "^\\*local variables\\*$"
-          "^\\*Compile-Log\\*$"
-          "^\\*Quail Completions\\*$"
-          "^\\*Occur\\*$"
-          "^\\*frequencies\\*$"
-          "^\\*compilation\\*$"
-          "^\\*Locate\\*$"
-          "^\\*Colors\\*$"
-          "^\\*tumme-display-image\\*$"
-          "^\\*SLIME Description\\*$"
-          "^\\*.* output\\*$"           ; tex compilation buffer
-          "^\\*input/output of .*\\*$"
-          "^\\*Man .*\\*$"
-          "^\\*magit .*\\*$"
-          "^\\*TeX Help\\*$"
-          "^\\*Shell Command Output\\*$"
-          "^\\*Async Shell Command\\*$"
-          "^\\*Backtrace\\*$"))
+      '("^\\*Completions\\*$"
+        "^\\*Help\\*$"
+        "^\\*grep\\*$"
+        "^\\*Apropos\\*$"
+        "^\\*elisp macroexpansion\\*$"
+        "^\\*local variables\\*$"
+        "^\\*Compile-Log\\*$"
+        "^\\*Quail Completions\\*$"
+        "^\\*Occur\\*$"
+        "^\\*frequencies\\*$"
+        "^\\*compilation\\*$"
+        "^\\*Locate\\*$"
+        "^\\*Colors\\*$"
+        "^\\*tumme-display-image\\*$"
+        "^\\*SLIME Description\\*$"
+        "^\\*.* output\\*$"           ; tex compilation buffer
+        "^\\*input/output of .*\\*$"
+        "^\\*Man .*\\*$"
+        "^\\*magit .*\\*$"
+        "^\\*TeX Help\\*$"
+        "^\\*Shell Command Output\\*$"
+        "^\\*Async Shell Command\\*$"
+        "^\\*Backtrace\\*$"))
 
 (setq grb-temporary-window (nth 2 (window-list)))
 (defun grb-special-display (buffer &optional data)
