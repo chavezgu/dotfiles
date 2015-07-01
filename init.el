@@ -156,4 +156,4 @@
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 
 ;; Compile
-(global-set-key (kbd "C-x c") 'recompile)
+(global-set-key (kbd "C-c c") 'recompile)
