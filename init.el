@@ -36,7 +36,6 @@
 
 ;; I copied this from the better defaults
 (global-set-key (kbd "M-/") 'hippie-expand)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
 (global-set-key (kbd "C-M-s") 'isearch-forward)
@@ -129,7 +128,10 @@
 (setq special-display-function #'grb-special-display)
 
 ;; Some c-mode stuff
-(setq c-default-style "linux")
+(defun my-c-mode-hook ()
+  (setq c-basic-offset 4)
+  (setq indent-tabs-mode nil))
+(add-hook 'c-mode-hook 'my-c-mode-hook)
 
 ;; Snippets
 ;; (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
