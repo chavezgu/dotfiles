@@ -123,3 +123,9 @@
   "Returns the major mode associated with a buffer."
   (with-current-buffer buffer-or-string
      major-mode))
+
+;; Shell to zsh
+(setq explicit-shell-file-name "/bin/zsh")
+(setq shell-file-name "/bin/zsh")
+(setenv "SHELL" shell-file-name)
+
