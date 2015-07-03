@@ -109,10 +109,6 @@
 (add-hook 'c++-mode-hook 'my:ac-c-header-init)
 (add-hook 'c-mode-hook 'my:ac-c-header-init)
 
-;; cscope
-(require 'xcscope)
-(cscope-setup)
-
 ;; Turn on Semantic
 (semantic-mode 1)
 ;; let's define a function which adds semantic as a suggestion backend to auto complete
@@ -127,6 +123,9 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+;; cscope
+(require 'xcscope)
+(cscope-setup)
 
 ;; It's magit!
 (global-set-key (kbd "C-x g") 'magit-status)
