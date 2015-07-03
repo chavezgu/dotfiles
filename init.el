@@ -60,6 +60,7 @@
 (evil-set-initial-state 'inferior-emacs-lisp-mode 'emacs)
 (evil-set-initial-state 'racket-repl-mode 'emacs)
 (evil-set-initial-state 'gud-mode 'emacs)
+(evil-set-initial-state 'cscope-list-entry-mode 'emacs)
 
 ;; Autocomplete defaults
 (require 'auto-complete)
