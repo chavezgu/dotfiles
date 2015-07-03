@@ -66,6 +66,9 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+;; Use electric pair
+(electric-pair-mode 1)
+
 ;; GRB: use C-o and M-o to switch windows
 (global-set-key "\M-o" 'other-window)
 (defun prev-window ()
@@ -124,9 +127,6 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
-
-;; Use electric pair
-(electric-pair-mode 1)
 
 ;; It's magit!
 (global-set-key (kbd "C-x g") 'magit-status)
