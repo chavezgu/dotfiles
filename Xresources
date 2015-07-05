@@ -15,7 +15,7 @@ URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.transparent:          true
 !URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt*.shading: 30
+URxvt*.shading: 20
 URxvt.fading:               0
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
