@@ -67,6 +67,8 @@
 (evil-set-initial-state 'racket-repl-mode 'emacs)
 (evil-set-initial-state 'gud-mode 'emacs)
 (evil-set-initial-state 'cscope-list-entry-mode 'emacs)
+(evil-set-initial-state 'magit-status-mode 'emacs)
+(evil-set-initial-state 'magit-popup-mode 'emacs)
 
 ;; Autocomplete defaults
 (require 'auto-complete)
