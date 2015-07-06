@@ -34,6 +34,12 @@
 (require 'saveplace)
 (setq-default save-place t)
 
+(require 'fill-column-indicator)
+(setq fci-rule-column 80)
+(setq fci-rule-width  2)
+(setq fci-rule-color "darkred")
+(add-hook 'after-change-major-mode-hook 'fci-mode)
+
 ;; I copied this from the better defaults
 (global-set-key (kbd "M-/") 'hippie-expand)
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
