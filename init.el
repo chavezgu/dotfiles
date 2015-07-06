@@ -81,6 +81,11 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+;; Snippets
+;; (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+
 ;; Use electric pair
 (electric-pair-mode 1)
 
@@ -132,11 +137,6 @@
   (add-to-list 'ac-sources 'ac-source-semantic)
 )
 (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
-
-;; Snippets
-;; (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
-(require 'yasnippet)
-(yas-global-mode 1)
 
 ;; cscope
 (require 'xcscope)
