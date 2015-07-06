@@ -134,7 +134,7 @@
 ;; let's define a function which adds semantic as a suggestion backend to auto complete
 ;; and hook this function to c-mode-common-hook
 (defun my:add-semantic-to-autocomplete()
-  (add-to-list 'ac-sources 'ac-source-semantic)
+  (add-to-list 'ac-sources 'ac-source-semantic-raw)
 )
 (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
 
