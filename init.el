@@ -213,4 +213,4 @@
 (setq org-agenda-files (list "~/org/todos/amelia.org"))
 (setq org-log-done t)
 
-(setq dired-listing-switches "-lh")
+(setq dired-listing-switches "-alh")
