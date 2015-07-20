@@ -23,6 +23,7 @@
       save-interprogram-paste-before-kill t
       apropos-do-all t
       mouse-yank-at-point t
+      ediff-window-setup-function 'ediff-setup-windows-plain
       save-place-file (concat user-emacs-directory "places")
       backup-directory-alist `(("." . ,(concat user-emacs-directory
                                                "backups"))))
