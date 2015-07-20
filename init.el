@@ -216,7 +216,12 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
-(setq org-agenda-files (list "~/org/todos/amelia.org"))
+(setq org-agenda-files (list "~/org/todos/amelia.org"
+                             "~/org/todos/personal.org"))
+
 (setq org-log-done t)
+(setq org-directory "~/org")
+(setq org-default-notes-file "~/org/inbox.org")
+
 
 (setq dired-listing-switches "-alh")
