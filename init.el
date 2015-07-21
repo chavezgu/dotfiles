@@ -217,7 +217,8 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-agenda-files (list "~/org/todos/amelia.org"
-                             "~/org/todos/personal.org"))
+                             "~/org/todos/personal.org"
+                             "~/org/todos/lola.org"))
 
 (setq org-log-done t)
 (setq org-directory "~/org")
