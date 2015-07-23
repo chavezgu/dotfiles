@@ -150,6 +150,7 @@
 ;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
 ;; (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-c h o") 'helm-occur)
+(global-set-key (kbd "C-h a") 'helm-apropos)
 
 ;; Fuzzy match for this
 (setq helm-buffers-fuzzy-matching t
