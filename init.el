@@ -158,12 +158,9 @@
       helm-recentf-fuzzy-match    t
       helm-apropos-fuzzy-match    t)
 
-(when (executable-find "ack")
-  (setq helm-grep-default-command "ack -Hn --no-group --no-color %e %p %f"
-        helm-grep-default-recurse-command "ack -H --no-group --no-color %e %p %f"))
-
 ;; Enable man pages at that point.
 (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
+
 
 
 (setq
@@ -189,6 +186,11 @@
 (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
 (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+
+
+(when (executable-find "ack")
+  (setq helm-grep-default-command "ack -Hn --no-group --no-color %e %p %f"
+        helm-grep-default-recurse-command "ack -H --no-group --no-color %e %p %f"))
 
 ;; Compile
 (global-set-key (kbd "<f5>") 'recompile)
