@@ -231,7 +231,8 @@
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
 
-
+;; Dired options
+(require 'dired-x)
 (setq dired-listing-switches "-alh")
 ;; Let's go back to IDO for some tasks
 (ido-mode 1)
