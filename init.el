@@ -222,7 +222,8 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-agenda-files (list "~/org/todos/amelia.org"
                              "~/org/todos/personal.org"
-                             "~/org/todos/lola.org"))
+                             "~/org/todos/lola.org"
+                             "~/org/todos/work.org"))
 
 (setq org-log-done t)
 (setq org-directory "~/org")
