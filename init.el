@@ -228,6 +228,8 @@
 (setq org-log-done t)
 (setq org-directory "~/org")
 (setq org-default-notes-file "~/org/inbox.org")
+(setq org-agenda-skip-scheduled-if-done t)
+(setq org-agenda-skip-deadline-if-done t)
 
 
 (setq dired-listing-switches "-alh")
