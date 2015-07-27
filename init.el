@@ -223,7 +223,7 @@
         helm-grep-default-recurse-command "ack -H --no-group --no-color %e %p %f"))
 
 ;; Compile
-(global-set-key (kbd "<f5>") 'recompile)
+(global-set-key (kbd "C-<f11>") 'recompile)
 
 ;; Get to know the major mode name from a buffer
 (defun buffer-mode (buffer-or-string)
