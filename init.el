@@ -60,8 +60,6 @@
 (setq key-chord-two-keys-delay 0.5)
 (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
 (key-chord-mode 1)
-;; Exit insert mode by pressing j and then j quickly
-(setq key-chord-two-keys-delay 0.5)
 
 ;; Make movement keys work like they should (The equivalent of gj and j)
 (define-key evil-normal-state-map (kbd "<remap> <evil-next-line>") 'evil-next-visual-line)
@@ -84,6 +82,7 @@
 (evil-set-initial-state 'magit-popup-mode 'emacs)
 (evil-set-initial-state 'ack-mode 'emacs)
 (evil-set-initial-state 'Man-mode 'emacs)
+(evil-set-initial-state 'Info-mode 'emacs)
 
 ;; Autocomplete defaults
 (require 'auto-complete)
