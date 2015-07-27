@@ -273,3 +273,6 @@
 (ido-mode 1)
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
+
+;; Set mupdf to open pdfs
+(add-to-list 'dired-guess-shell-alist-user '("\\.pdf\\'" "mupdf"))
