@@ -83,7 +83,7 @@
 (evil-set-initial-state 'magit-status-mode 'emacs)
 (evil-set-initial-state 'magit-popup-mode 'emacs)
 (evil-set-initial-state 'ack-mode 'emacs)
-(evil-set-initial-state 'man-mode 'emacs)
+(evil-set-initial-state 'Man-mode 'emacs)
 
 ;; Autocomplete defaults
 (require 'auto-complete)
