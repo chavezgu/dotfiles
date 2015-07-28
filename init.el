@@ -277,3 +277,12 @@
 (add-to-list 'dired-guess-shell-alist-user '("\\.pdf\\'" "mupdf"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.azw3\\'" "ebook-viewer"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.mobi\\'" "ebook-viewer"))
+
+;; Sudo in TRAMP
+(defun sudo ()
+  "Use TRAMP to `sudo' the current buffer"
+  (interactive)
+  (when buffer-file-name
+    (find-alternate-file
+     (concat "/sudo:root@localhost:"
+             buffer-file-name))))
