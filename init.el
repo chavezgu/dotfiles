@@ -83,6 +83,7 @@
 (evil-set-initial-state 'ack-mode 'emacs)
 (evil-set-initial-state 'Man-mode 'emacs)
 (evil-set-initial-state 'Info-mode 'emacs)
+(evil-set-initial-state 'compilation-mode 'emacs)
 
 ;; Autocomplete defaults
 (require 'auto-complete)
