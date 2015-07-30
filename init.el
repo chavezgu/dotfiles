@@ -287,3 +287,5 @@
     (find-alternate-file
      (concat "/sudo:root@localhost:"
              buffer-file-name))))
+
+(add-to-list 'auto-mode-alist '("/mutt" . mail-mode))
