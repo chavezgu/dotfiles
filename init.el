@@ -58,6 +58,8 @@
 (require 'evil)
 (evil-mode 1)
 (setq key-chord-two-keys-delay 0.5)
+(setcdr evil-insert-state-map nil)
+(define-key evil-insert-state-map [escape] 'evil-normal-state)
 (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
 (key-chord-mode 1)
 
