@@ -4,7 +4,7 @@
 [alias]
         co = checkout
         br = branch
-        ci = commit
+        ci = commit --verbose
         st = status
         ff = merge --ff-only
         pullff = pull --ff-only
