@@ -82,6 +82,7 @@
 (evil-set-initial-state 'cscope-list-entry-mode 'emacs)
 (evil-set-initial-state 'magit-status-mode 'emacs)
 (evil-set-initial-state 'magit-popup-mode 'emacs)
+(evil-set-initial-state 'magit-revision-mode 'emacs)
 (evil-set-initial-state 'ack-mode 'emacs)
 (evil-set-initial-state 'Man-mode 'emacs)
 (evil-set-initial-state 'Info-mode 'emacs)
