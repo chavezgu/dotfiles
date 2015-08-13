@@ -282,7 +282,7 @@
 (add-to-list 'dired-guess-shell-alist-user '("\\.pdf\\'" "mupdf"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.azw3\\'" "ebook-viewer"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.mobi\\'" "ebook-viewer"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.mp4\\'" "mplayer"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.mp4\\'" "mpv"))
 
 ;; Sudo in TRAMP
 (defun sudo ()
