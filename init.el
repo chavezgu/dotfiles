@@ -89,11 +89,6 @@
 (evil-set-initial-state 'inferior-python-mode 'emacs)
 (evil-set-initial-state 'cider-repl-mode 'emacs)
 
-;; Autocomplete defaults
-(require 'auto-complete)
-(require 'auto-complete-config)
-(ac-config-default)
-
 ;; Snippets
 ;; (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
 (require 'yasnippet)
@@ -141,16 +136,6 @@
 
 ;; Some c-mode stuff
 (setq c-default-style "linux")
-
-;; let's define a function which initializes auto-complete-c-headers and gets called for c/c++ hooks
-(defun my:ac-c-header-init ()
-  (require 'auto-complete-c-headers)
-  (add-to-list 'ac-sources 'ac-source-c-headers)
-)
-
-;; now let's call this function from c/c++ hooks
-(add-hook 'c++-mode-hook 'my:ac-c-header-init)
-(add-hook 'c-mode-hook 'my:ac-c-header-init)
 
 ;; cscope
 (require 'xcscope)
@@ -226,6 +211,8 @@
 (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 
+;; Company to autocomplete
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; Compile
 (global-set-key (kbd "C-<f11>") 'recompile)
