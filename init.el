@@ -83,7 +83,6 @@
 (evil-set-initial-state 'magit-status-mode 'emacs)
 (evil-set-initial-state 'magit-popup-mode 'emacs)
 (evil-set-initial-state 'magit-revision-mode 'emacs)
-(evil-set-initial-state 'ack-mode 'emacs)
 (evil-set-initial-state 'Man-mode 'emacs)
 (evil-set-initial-state 'Info-mode 'emacs)
 (evil-set-initial-state 'compilation-mode 'emacs)
@@ -227,10 +226,6 @@
 (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 
-
-(when (executable-find "ack")
-  (setq helm-grep-default-command "ack -Hn --no-group --no-color %e %p %f"
-        helm-grep-default-recurse-command "ack -H --no-group --no-color %e %p %f"))
 
 ;; Compile
 (global-set-key (kbd "C-<f11>") 'recompile)
