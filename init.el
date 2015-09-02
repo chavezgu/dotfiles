@@ -88,6 +88,7 @@
 (evil-set-initial-state 'Info-mode 'emacs)
 (evil-set-initial-state 'compilation-mode 'emacs)
 (evil-set-initial-state 'inferior-python-mode 'emacs)
+(evil-set-initial-state 'cider-repl-mode 'emacs)
 
 ;; Autocomplete defaults
 (require 'auto-complete)
