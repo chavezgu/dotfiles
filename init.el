@@ -100,13 +100,6 @@
 ;; Use electric pair
 (electric-pair-mode 1)
 
-;; GRB: use C-o and M-o to switch windows
-(global-set-key "\M-o" 'other-window)
-(defun prev-window ()
-  (interactive)
-  (other-window -1))
-(global-set-key "\M-O" 'prev-window)
-
 
 ;; GRB: highlight trailing whitespace
 (set-default 'show-trailing-whitespace t)
@@ -282,3 +275,10 @@
              buffer-file-name))))
 
 (add-to-list 'auto-mode-alist '("/mutt" . mail-mode))
+
+;; GRB: use C-o and M-o to switch windows
+(global-set-key "\M-o" 'other-window)
+(defun prev-window ()
+  (interactive)
+  (other-window -1))
+(global-set-key "\M-O" 'prev-window)
