@@ -88,6 +88,7 @@
 (evil-set-initial-state 'compilation-mode 'emacs)
 (evil-set-initial-state 'inferior-python-mode 'emacs)
 (evil-set-initial-state 'cider-repl-mode 'emacs)
+(evil-set-initial-state 'grep-mode 'emacs)
 
 ;; Snippets
 ;; (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
