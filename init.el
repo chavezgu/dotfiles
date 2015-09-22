@@ -285,3 +285,8 @@
   (interactive)
   (other-window -1))
 (global-set-key "\M-O" 'prev-window)
+
+;; Projectile
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
