@@ -170,6 +170,9 @@
 (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 
+;; Find definitions in current buffer
+(setq-local imenu-create-index-function #'moo-jump-local)
+
 ;; Company to autocomplete
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
