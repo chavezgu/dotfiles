@@ -206,14 +206,14 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
-(setq org-agenda-files (list "~/org/todos/amelia.org"
-                             "~/org/todos/personal.org"
-                             "~/org/todos/lola.org"
-                             "~/org/todos/work.org"))
+(setq org-agenda-files (list "~/Dropbox/todos/amelia.org"
+                             "~/Dropbox/todos/personal.org"
+                             "~/Dropbox/todos/lola.org"
+                             "~/Dropbox/todos/work.org"))
 
 (setq org-log-done t)
-(setq org-directory "~/org")
-(setq org-default-notes-file "~/org/inbox.org")
+(setq org-directory "~/Dropobox/todos")
+(setq org-default-notes-file "~/Dropbox/inbox.org")
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
 
