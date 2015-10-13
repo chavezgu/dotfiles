@@ -40,7 +40,7 @@ Config {
         [ Run StdinReader
         
         -- weather monitor
-        , Run Weather "EFHK" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
+        , Run Weather "EFHK" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% "
                              ] 36000
 
         -- network activity monitor (dynamic interface resolution)
