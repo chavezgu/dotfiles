@@ -96,3 +96,9 @@ source /usr/bin/virtualenvwrapper.sh
 export GOPATH=$HOME/projects/go
 
 export PATH="$PATH:$HOME/.rvm/bin:$GOPATH/bin"
+
+# Fix issue with emacs
+if [ -n "$INSIDE_EMACS" ]; then
+    export EDITOR=emacsclient
+    unset zle_bracketed_paste  # This line
+fi
