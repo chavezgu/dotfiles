@@ -73,6 +73,11 @@
 ;; Shell pop
 (require 'shell-pop)
 
+;; Shell to zsh
+(setq explicit-shell-file-name "/bin/zsh")
+(setq shell-file-name "/bin/zsh")
+(setenv "SHELL" shell-file-name)
+
 (column-number-mode t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -185,11 +190,6 @@
   "Returns the major mode associated with a buffer."
   (with-current-buffer buffer-or-string
      major-mode))
-
-;; Shell to zsh
-(setq explicit-shell-file-name "/bin/zsh")
-(setq shell-file-name "/bin/zsh")
-(setenv "SHELL" shell-file-name)
 
 (setq
  ;; use gdb-many-windows by default
