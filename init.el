@@ -272,3 +272,5 @@
 (add-hook 'gnus-startup-hook 'bbdb-insinuate-gnus)
 (bbdb-insinuate-message)
 
+;; Because we use twitter now in emacs.
+(setq twittering-use-master-password t)
