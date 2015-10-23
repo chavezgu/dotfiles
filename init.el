@@ -201,6 +201,12 @@
 
 ;; Some org-mode sane values
 (require 'org)
+(defun my-org-mode-hook()
+  (progn
+    (turn-on-flyspell)
+    (auto-fill-mode 1)))
+(add-hook 'org-mode-hook 'my-org-mode-hook)
+
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
