@@ -291,6 +291,3 @@
 
 (add-to-list 'display-buffer-alist
              '("*magit\:.*". ((display-buffer-same-window))))
-
-
-
