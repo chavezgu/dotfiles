@@ -282,3 +282,8 @@
 
 ;; Because we use twitter now in emacs.
 (setq twittering-use-master-password t)
+
+;; Some buffer display magic.
+;; Always show me the log in the same window
+(add-to-list 'display-buffer-alist
+             '("*vc-change-log*". ((display-buffer-same-window))))
