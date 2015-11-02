@@ -291,3 +291,8 @@
 
 (add-to-list 'display-buffer-alist
              '("*magit\:.*". ((display-buffer-same-window))))
+
+(add-to-list 'display-buffer-alist
+             '("*magit\-log\:.*". ((display-buffer-use-some-window) .
+                                   ((inhibit-same-window . t)))))
+
