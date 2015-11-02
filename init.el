@@ -79,6 +79,11 @@
 (setenv "SHELL" shell-file-name)
 
 (column-number-mode t)
+
+;; It's magit!
+(require 'magit)
+(global-set-key (kbd "C-x g") 'magit-status)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -103,9 +108,6 @@
 ;; cscope
 (require 'xcscope)
 (cscope-setup)
-
-;; It's magit!
-(global-set-key (kbd "C-x g") 'magit-status)
 
 ;; Helm configuration
 (require 'helm)
