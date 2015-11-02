@@ -90,7 +90,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(magit-commit-arguments (quote ("--verbose")))
- '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (shell)))))
+ '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (eshell)))))
  '(shell-pop-universal-key "M-`")
  '(shell-pop-windown-position "bottom")
  '(show-paren-mode t)
