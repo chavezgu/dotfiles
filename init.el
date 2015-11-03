@@ -286,10 +286,6 @@
 ;; Some buffer display magic.
 ;; Always show me the log in the same window
 (add-to-list 'display-buffer-alist
-             '("*vc-change-log*". ((display-buffer-same-window))))
-
-
-(add-to-list 'display-buffer-alist
              '("*magit\:.*". ((display-buffer-same-window))))
 
 (add-to-list 'display-buffer-alist
