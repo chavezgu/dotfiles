@@ -55,3 +55,6 @@
 (setq c-default-style "linux")
 
 (electric-pair-mode 1)
+
+;; Ignore annoying messages in IRC
+(setq erc-hide-list '("JOIN" "PART" "QUIT"))
