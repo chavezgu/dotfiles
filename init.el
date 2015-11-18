@@ -69,10 +69,6 @@
 ;; GRB: highlight trailing whitespace
 (set-default 'show-trailing-whitespace t)
 
-
-;; Shell pop
-(require 'shell-pop)
-
 ;; Shell to zsh
 (setq explicit-shell-file-name "/bin/zsh")
 (setq shell-file-name "/bin/zsh")
