@@ -297,6 +297,11 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
+;; Hide the minor modes
+(require 'rich-minority)
+(rich-minority-mode 1)
+(setf rm-blacklist "")
+
 ;; Gnus
 (add-hook 'gnus-summary-mode-hook
           (lambda ()
