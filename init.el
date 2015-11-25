@@ -364,5 +364,5 @@
 
 (global-set-key (kbd "M-\`") 'gcg-switch-to-eshell)
 
-
-
+;; Delete all trailing whitespace when saving.
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
