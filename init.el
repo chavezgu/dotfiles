@@ -355,3 +355,14 @@
 
 (add-to-list 'display-buffer-alist
              '("*cscope*". ((gcg-display-in-shell-window))))
+
+(defun gcg-switch-to-eshell ()
+  (interactive)
+  (progn
+    (gcg-display-in-shell-window "*eshell*")
+    (select-window gcg-shell-window)))
+
+(global-set-key (kbd "M-\`") 'gcg-switch-to-eshell)
+
+
+
