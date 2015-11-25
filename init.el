@@ -101,9 +101,6 @@
 ;; Some c-mode stuff
 (setq c-default-style "linux")
 
-;; cscope
-(require 'xcscope)
-(cscope-setup)
 
 ;; Helm configuration
 (require 'helm)
@@ -171,6 +168,17 @@
 (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
 (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+
+;; cscope
+(require 'xcscope)
+(cscope-setup)
+
+;; We also want the helm integration
+(require 'helm-cscope)
+(add-hook 'c-mode-hook 'helm-cscope-mode)
+(add-hook 'c++-mode-hook 'helm-cscope-mode)
+(define-key helm-cscope-mode-map (kbd "C-c s s") 'helm-cscope-find-this-symbol)
+(define-key helm-cscope-mode-map (kbd "C-c s c") 'helm-cscope-find-calling-this-funtcion)
 
 ;; Find definitions in current buffer
 (setq-local imenu-create-index-function #'moo-jump-local)
