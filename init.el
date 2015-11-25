@@ -307,3 +307,7 @@
 (add-hook 'gnus-summary-mode-hook
           (lambda ()
             (local-set-key (kbd "DEL") 'gnus-summary-scroll-down)))
+
+;; We don't need to send email if we are not inside gnus.
+(global-set-key (kbd "C-x m") nil)
+
