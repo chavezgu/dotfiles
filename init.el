@@ -280,15 +280,6 @@
 ;; Because we use twitter now in emacs.
 (setq twittering-use-master-password t)
 
-;; Some buffer display magic.
-;; Always show me the log in the same window
-(add-to-list 'display-buffer-alist
-             '("*magit\:.*". ((display-buffer-same-window))))
-
-(add-to-list 'display-buffer-alist
-             '("*magit\-log\:.*". ((display-buffer-use-some-window) .
-                                   ((inhibit-same-window . t)))))
-
 ;; We follow Steve Yegge advice
 (global-set-key "\C-x\C-m" 'helm-M-x)
 (global-set-key "\C-c\C-m" 'helm-M-x)
@@ -311,3 +302,56 @@
 ;; We don't need to send email if we are not inside gnus.
 (global-set-key (kbd "C-x m") nil)
 
+;; Let's have a 3 window arrangement
+(progn
+  (interactive)
+  (split-window-horizontally)
+  (split-window)
+  (other-window 1)
+  (other-window 1))
+
+(setq gcg-info-window (nth 1 (window-list)))
+(setq gcg-shell-window (nth 2 (window-list)))
+(setq gcg-code-window (nth 0 (window-list)))
+
+;; Almost copy pasted from Gary
+;; HORRIBLE code duplication
+(defun gcg-display-in-info-window (buffer &optional alist)
+  (let ((window gcg-info-window))
+    (with-selected-window window
+      (switch-to-buffer buffer)
+      window)))
+
+(defun gcg-display-in-code-window (buffer &optional alist)
+  (let ((window gcg-code-window))
+    (with-selected-window window
+      (switch-to-buffer buffer)
+      window)))
+
+
+(defun gcg-display-in-shell-window (buffer &optional alist)
+  (let ((window gcg-shell-window))
+    (with-selected-window window
+      (switch-to-buffer buffer)
+      window)))
+
+;; Some buffer display magic.
+;; Always show me the log in the same window
+(add-to-list 'display-buffer-alist
+             `(,(rx bos "*Help*" eos)
+               (gcg-display-in-info-window)))
+
+(add-to-list 'display-buffer-alist
+             '("*magit\-log\:.*". ((gcg-display-in-shell-window))))
+
+(add-to-list 'display-buffer-alist
+             '("*magit\-revision\:.*". ((gcg-display-in-code-window))))
+
+(add-to-list 'display-buffer-alist
+             '("*magit\-diff\:.*". ((gcg-display-in-code-window))))
+
+(add-to-list 'display-buffer-alist
+             '("*magit\:.*". ((gcg-display-in-shell-window))))
+
+(add-to-list 'display-buffer-alist
+             '("*cscope*". ((gcg-display-in-shell-window))))
