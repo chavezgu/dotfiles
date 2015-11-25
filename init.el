@@ -226,7 +226,7 @@
 (setq dired-listing-switches "-alh")
 
 ;; Imenu, because it's good.
-(global-set-key (kbd "M-i") 'imenu)
+(global-set-key (kbd "M-i") 'helm-semantic-or-imenu)
 
 ;; Let's go back to IDO for some tasks
 (ido-mode 1)
