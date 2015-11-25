@@ -220,6 +220,7 @@
 (setq org-default-notes-file "~/Dropbox/todos/inbox.org")
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-window-setup 'current-window)
 
 ;; Dired options
 (require 'dired-x)
