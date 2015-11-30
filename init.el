@@ -320,25 +320,20 @@
 (setq gcg-code-window (nth 0 (window-list)))
 
 ;; Almost copy pasted from Gary
-;; HORRIBLE code duplication
+;; Now less HORRIBLE code duplication
+(defun gcg-display-in-selected-window (buffer window &optional alist)
+  (with-selected-window window
+    (switch-to-buffer buffer)
+    window))
+
 (defun gcg-display-in-info-window (buffer &optional alist)
-  (let ((window gcg-info-window))
-    (with-selected-window window
-      (switch-to-buffer buffer)
-      window)))
+  (gcg-display-in-selected-window buffer gcg-info-window))
 
 (defun gcg-display-in-code-window (buffer &optional alist)
-  (let ((window gcg-code-window))
-    (with-selected-window window
-      (switch-to-buffer buffer)
-      window)))
-
+  (gcg-display-in-selected-window buffer gcg-code-window))
 
 (defun gcg-display-in-shell-window (buffer &optional alist)
-  (let ((window gcg-shell-window))
-    (with-selected-window window
-      (switch-to-buffer buffer)
-      window)))
+  (gcg-display-in-selected-window buffer gcg-shell-window))
 
 ;; Some buffer display magic.
 ;; Always show me the log in the same window
