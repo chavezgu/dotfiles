@@ -356,6 +356,10 @@
 (add-to-list 'display-buffer-alist
              '("*cscope*". ((gcg-display-in-shell-window))))
 
+(add-to-list 'display-buffer-alist
+             `(,(rx bos "*Password-Store*" eos)
+               (gcg-display-in-shell-window)))
+
 (defun gcg-switch-to-eshell ()
   (interactive)
   (progn
