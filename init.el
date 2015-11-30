@@ -313,6 +313,7 @@
   (split-window-horizontally)
   (split-window)
   (other-window 1)
+  (eshell)
   (other-window 1))
 
 (setq gcg-info-window (nth 1 (window-list)))
