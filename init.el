@@ -363,9 +363,14 @@
 
 (defun gcg-switch-to-eshell ()
   (interactive)
-  (progn
+  (let ((project-root (projectile-project-root)))
     (gcg-display-in-shell-window "*eshell*")
-    (select-window gcg-shell-window)))
+    (select-window gcg-shell-window)
+    (eshell-kill-input)
+    (goto-char (point-max))
+    (insert
+     (format "cd '%s'" project-root))
+    (eshell-send-input)))
 
 (global-set-key (kbd "M-\`") 'gcg-switch-to-eshell)
 
