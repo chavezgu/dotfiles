@@ -375,5 +375,17 @@
 
 (global-set-key (kbd "M-\`") 'gcg-switch-to-eshell)
 
+
+(defun gcg-maximize-current-buffer ()
+  (interactive)
+  (let ((prev-buf (other-buffer))
+        (code-win gcg-code-window)
+        (curr-buf (current-buffer)))
+    (switch-to-buffer prev-buf)
+    (gcg-display-in-code-window curr-buf)
+    (select-window code-win)))
+
+(global-set-key (kbd "M-\'") 'gcg-maximize-current-buffer)
+
 ;; Delete all trailing whitespace when saving.
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
