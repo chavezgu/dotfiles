@@ -216,6 +216,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-agenda-files (list "~/Dropbox/todos/amelia.org"
+                             "~/Dropbox/todos/personal.org"
                              "~/Dropbox/todos/inbox.org"
                              "~/Dropbox/todos/lola.org"
                              "~/Dropbox/todos/work.org"))
