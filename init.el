@@ -347,12 +347,6 @@
              '("*magit\-log\:.*". ((gcg-display-in-shell-window))))
 
 (add-to-list 'display-buffer-alist
-             '("*magit\-revision\:.*". ((gcg-display-in-code-window))))
-
-(add-to-list 'display-buffer-alist
-             '("*magit\-diff\:.*". ((gcg-display-in-code-window))))
-
-(add-to-list 'display-buffer-alist
              '("*magit\:.*". ((gcg-display-in-shell-window))))
 
 (add-to-list 'display-buffer-alist
@@ -361,6 +355,12 @@
 (add-to-list 'display-buffer-alist
              `(,(rx bos "*Password-Store*" eos)
                (gcg-display-in-shell-window)))
+
+(add-to-list 'display-buffer-alist
+             '("*magit\-revision\:.*". ((gcg-display-in-code-window))))
+
+(add-to-list 'display-buffer-alist
+             '("*magit\-diff\:.*". ((gcg-display-in-code-window))))
 
 (defun gcg-switch-to-eshell ()
   (interactive)
