@@ -349,6 +349,10 @@
                (gcg-display-in-info-window)))
 
 (add-to-list 'display-buffer-alist
+             `(,(rx bos "*Async Shell Command*" eos)
+               (gcg-display-in-info-window)))
+
+(add-to-list 'display-buffer-alist
              '("*magit\-log\:.*". ((gcg-display-in-shell-window))))
 
 (add-to-list 'display-buffer-alist
