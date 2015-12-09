@@ -176,7 +176,7 @@
 (add-hook 'c++-mode-hook 'helm-cscope-mode)
 (define-key helm-cscope-mode-map (kbd "C-c s s") 'helm-cscope-find-this-symbol)
 (define-key helm-cscope-mode-map (kbd "C-c s c") 'helm-cscope-find-calling-this-funtcion)
-
+(define-key helm-cscope-mode-map (kbd "C-c s g") 'helm-cscope-find-global-definition)
 ;; Find definitions in current buffer
 (setq-local imenu-create-index-function #'moo-jump-local)
 
