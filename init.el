@@ -366,6 +366,10 @@
                (gcg-display-in-shell-window)))
 
 (add-to-list 'display-buffer-alist
+             `(,(rx bos "*vc-dir*" eos)
+               (gcg-display-in-shell-window)))
+
+(add-to-list 'display-buffer-alist
              '("*magit\-revision\:.*". ((gcg-display-in-code-window))))
 
 (add-to-list 'display-buffer-alist
