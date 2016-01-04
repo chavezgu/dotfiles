@@ -222,8 +222,8 @@
                              "~/org/todos/work.org"))
 
 (setq org-log-done t)
-(setq org-directory "~/Dropobox/todos")
-(setq org-default-notes-file "~/Dropbox/todos/inbox.org")
+(setq org-directory "~/org/todos")
+(setq org-default-notes-file "~/org/todos/inbox.org")
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
 (setq org-agenda-window-setup 'current-window)
