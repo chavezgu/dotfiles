@@ -95,7 +95,7 @@ source /usr/bin/virtualenvwrapper.sh
 # Go
 export GOPATH=$HOME/projects/go
 
-export PATH="$PATH:$HOME/.rvm/bin:$GOPATH/bin"
+export PATH="$PATH:$GOPATH/bin"
 
 # Fix issue with emacs
 if [ -n "$INSIDE_EMACS" ]; then
