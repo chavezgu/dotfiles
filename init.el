@@ -219,6 +219,7 @@
                              "~/org/todos/personal.org"
                              "~/org/todos/inbox.org"
                              "~/org/todos/lola.org"
+                             "~/org/todos/errands.org"
                              "~/org/todos/work.org"))
 
 (setq org-log-done t)
