@@ -404,7 +404,7 @@
 (global-set-key (kbd "M-\'") 'gcg-maximize-current-buffer)
 
 ;; Delete all trailing whitespace when saving.
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;; (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (global-set-key (kbd "M-n") 'jump-char-forward)
 
