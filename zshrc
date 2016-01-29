@@ -85,10 +85,6 @@ export BROWSER="firefox"
 export EDITOR="vim"
 export RI="--format ansi --width 70"
 
-
-export NVM_DIR="/home/chavezgu/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
