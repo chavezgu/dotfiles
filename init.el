@@ -401,7 +401,18 @@
     (gcg-display-in-code-window curr-buf)
     (select-window code-win)))
 
+(defun gcg-minimize-current-buffer ()
+  (interactive)
+  (let ((prev-buf (other-buffer))
+        (info-win gcg-info-window)
+        (curr-buf (current-buffer)))
+    (switch-to-buffer prev-buf)
+    (gcg-display-in-info-window curr-buf)
+    (select-window info-win)))
+
 (global-set-key (kbd "M-\'") 'gcg-maximize-current-buffer)
+
+(global-set-key (kbd "M-\"") 'gcg-minimize-current-buffer)
 
 ;; Delete all trailing whitespace when saving.
 ;; (add-hook 'before-save-hook 'delete-trailing-whitespace)
