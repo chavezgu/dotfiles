@@ -419,3 +419,7 @@
 
 ;; Because I'm old, I need to highlight the line where my cursor is.
 (global-hl-line-mode 1)
+
+;; Save sessions with no frames.
+(desktop-save-mode 1)
+(setq desktop-restore-frames nil)
