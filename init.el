@@ -259,8 +259,6 @@
      (concat "/sudo:root@localhost:"
              buffer-file-name))))
 
-(add-to-list 'auto-mode-alist '("/mutt" . mail-mode))
-
 ;; GRB: use C-o and M-o to switch windows
 (global-set-key "\M-o" 'other-window)
 (defun prev-window ()
