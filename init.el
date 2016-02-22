@@ -423,3 +423,19 @@
 ;; Save sessions with no frames.
 (desktop-save-mode 1)
 (setq desktop-restore-frames nil)
+
+;; Some semantic stuff that doesn't really work very well with
+;; large code bases.
+
+;; (require 'cc-mode)
+;; (require 'semantic)
+
+;; (global-semanticdb-minor-mode 1)
+;; (global-semantic-idle-scheduler-mode 1)
+
+;; (semantic-mode 1)
+
+;; (setq-local eldoc-documentation-function #'ggtags-eldoc-function)
+
+;; (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
+
