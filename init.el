@@ -439,3 +439,7 @@
 
 ;; (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
 
+(require 'tramp)
+(add-to-list 'tramp-remote-path 'tramp-own-remote-path)
+(setq enable-remote-dir-locals t)
+
