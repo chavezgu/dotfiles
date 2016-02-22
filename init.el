@@ -443,3 +443,13 @@
 (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
 (setq enable-remote-dir-locals t)
 
+(defun gcg-set-window-width (window n)
+  (adjust-window-trailing-edge window (- n (window-width)) t))
+
+
+;; Maybe this combination should always go to the end?
+(gcg-set-window-width gcg-info-window 70)
+(sr-speedbar-open)
+(gcg-set-window-width gcg-code-window 90)
+
+
