@@ -183,12 +183,12 @@
 ;; Find definitions in current buffer
 (setq-local imenu-create-index-function #'moo-jump-local)
 
-;; Company to autocomplete
+;; Company configuration
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (add-to-list 'company-backends 'company-c-headers)
-
 (setq company-idle-delay nil)
+(global-set-key (kbd "M-<tab>") 'company-complete)
 
 ;; Compile and Run,
 (global-set-key (kbd "C-<f11>") 'projectile-compile-project)
