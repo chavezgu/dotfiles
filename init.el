@@ -337,3 +337,6 @@
 (require 'tramp)
 (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
 (setq enable-remote-dir-locals t)
+
+;; Same as C-x 1
+(global-set-key (kbd "C-x 9") 'delete-other-windows)
