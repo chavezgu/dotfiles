@@ -340,3 +340,19 @@
 
 ;; Same as C-x 1
 (global-set-key (kbd "C-x 9") 'delete-other-windows)
+
+(defun gcg-display-in-selected-window (buffer window &optional alist)
+  (with-selected-window window
+    (switch-to-buffer buffer)
+    window))
+
+(defun gcg-switch-windows ()
+  (interactive)
+  (let ((other-buffer (window-buffer (nth 1 (window-list))))
+        (target-window (nth 1 (window-list)))
+        (current-buffer (current-buffer)))
+    (switch-to-buffer other-buffer)
+    (gcg-display-in-selected-window current-buffer target-window)
+    (select-window target-window)))
+
+(global-set-key (kbd "M-\'") 'gcg-switch-windows)
