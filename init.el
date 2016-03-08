@@ -160,6 +160,7 @@
 (add-hook 'eshell-mode-hook 'helm-gtags-mode)
 (add-hook 'c-mode-hook 'helm-gtags-mode)
 (add-hook 'c++-mode-hook 'helm-gtags-mode)
+(add-hook 'go-mode-hook 'helm-gtags-mode)
 
 (define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
 (define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
@@ -194,7 +195,7 @@
 (global-set-key (kbd "<f5>") 'projectile-run-project)
 
 ;; Get to know the major mode name from a buffer
-(defun buffer-mode (buffer-or-string)
+(defun buffer-mode (buffer-or-string)   ;
   "Returns the major mode associated with a buffer."
   (with-current-buffer buffer-or-string
      major-mode))
