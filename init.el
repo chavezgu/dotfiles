@@ -348,11 +348,11 @@
 
 (defun gcg-switch-windows ()
   (interactive)
-  (let ((other-buffer (window-buffer (nth 1 (window-list))))
-        (target-window (nth 1 (window-list)))
+  (let* ((other-window (nth 1 (window-list)))
+        (other-buffer (window-buffer other-window))
         (current-buffer (current-buffer)))
     (switch-to-buffer other-buffer)
-    (gcg-display-in-selected-window current-buffer target-window)
-    (select-window target-window)))
+    (gcg-display-in-selected-window current-buffer other-window)
+    (select-window other-window)))
 
 (global-set-key (kbd "M-\'") 'gcg-switch-windows)
