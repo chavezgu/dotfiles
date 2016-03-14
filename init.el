@@ -233,6 +233,7 @@
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
 (setq org-agenda-window-setup 'current-window)
+(setq org-src-fontify-natively t)
 
 ;; Dired options
 (require 'dired-x)
