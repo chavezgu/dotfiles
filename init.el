@@ -357,3 +357,10 @@
     (select-window other-window)))
 
 (global-set-key (kbd "M-\'") 'gcg-switch-windows)
+
+;; Hooks for info mode
+(add-hook 'Info-mode-hook
+          (lambda ()
+            (local-set-key (kbd "DEL") 'scroll-down-line)
+            (local-set-key (kbd "RET") 'scroll-up-line)
+            (local-set-key (kbd "o") 'Info-follow-nearest-node)))
