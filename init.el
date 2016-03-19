@@ -143,8 +143,6 @@
 ;; Enable man pages at that point.
 (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
 
-
-
 (setq
  helm-gtags-ignore-case t
  helm-gtags-auto-update t
