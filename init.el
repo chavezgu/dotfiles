@@ -245,7 +245,7 @@
      (concat "/sudo:root@localhost:"
              buffer-file-name))))
 
-GRB: use C-o and M-o to switch windows
+;; GRB: use C-o and M-o to switch windows
 (global-set-key (kbd "M-o") 'other-window)
 (defun prev-window ()
   (interactive)
