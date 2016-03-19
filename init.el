@@ -86,9 +86,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-babel-load-languages (quote ((C . t) (emacs-lisp . t))))
- '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (eshell)))))
- '(shell-pop-universal-key "M-`")
- '(shell-pop-windown-position "bottom")
  '(show-paren-mode t)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
 (custom-set-faces
