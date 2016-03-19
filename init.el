@@ -245,12 +245,12 @@
      (concat "/sudo:root@localhost:"
              buffer-file-name))))
 
-;; GRB: use C-o and M-o to switch windows
-(global-set-key "\M-o" 'other-window)
+GRB: use C-o and M-o to switch windows
+(global-set-key (kbd "M-o") 'other-window)
 (defun prev-window ()
   (interactive)
   (other-window -1))
-(global-set-key "\M-O" 'prev-window)
+(global-set-key (kbd "M-O") 'prev-window)
 
 ;; Make man pages open in the same window.
 (setq Man-notify-method 'pushy)
