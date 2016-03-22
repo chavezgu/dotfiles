@@ -149,22 +149,19 @@
  helm-gtags-suggested-key-mapping t
  )
 
-(require 'helm-gtags)
-;; Enable helm-gtags-mode
-(add-hook 'dired-mode-hook 'helm-gtags-mode)
-(add-hook 'c-mode-hook 'helm-gtags-mode)
-(add-hook 'c++-mode-hook 'helm-gtags-mode)
-(add-hook 'go-mode-hook 'helm-gtags-mode)
+(require 'ggtags)
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+              (ggtags-mode 1))))
 
-(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
-(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
-(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
-(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
-(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
-(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+(setq-local eldoc-documentation-function #'ggtags-eldoc-function)
 
-;; Find definitions in current buffer
-(setq-local imenu-create-index-function #'moo-jump-local)
+(setq-local imenu-create-index-function #'ggtags-build-imenu-index)
+
+(setq-local hippie-expand-try-functions-list
+            (cons 'ggtags-try-complete-tag hippie-expand-try-functions-list))
+
 
 ;; Company configuration
 (require 'company)
