@@ -11,3 +11,6 @@ alias paclocs="sudo pacman -Qs"
 
 # Journal
 alias jc="sudo journalctl"
+
+# Global
+alias global="/usr/bin/global"
