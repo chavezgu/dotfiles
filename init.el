@@ -310,6 +310,8 @@
 
 ;; Same as C-x 1
 (global-set-key (kbd "C-x 9") 'delete-other-windows)
+(global-set-key (kbd "C-x |") 'split-window-right)
+(global-set-key (kbd "C-x -") 'split-window-below)
 
 (defun gcg-display-in-selected-window (buffer window &optional alist)
   (with-selected-window window
