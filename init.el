@@ -153,15 +153,13 @@
 (add-hook 'c-mode-common-hook
           (lambda ()
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-              (ggtags-mode 1))))
+              (ggtags-mode 1)
+              (setq-local eldoc-documentation-function #'ggtags-eldoc-function)
+              (setq-local hippie-expand-try-functions-list
+                          (cons 'ggtags-try-complete-tag hippie-expand-try-functions-list)))))
 
-(setq-local eldoc-documentation-function #'ggtags-eldoc-function)
-
-(setq-local imenu-create-index-function #'ggtags-build-imenu-index)
-
-(setq-local hippie-expand-try-functions-list
-            (cons 'ggtags-try-complete-tag hippie-expand-try-functions-list))
-
+;; This is what we have to do to avoid mksh stuff
+(setq ggtags-executable-directory "/usr/bin/")
 
 ;; Company configuration
 (require 'company)
