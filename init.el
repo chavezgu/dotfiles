@@ -254,6 +254,8 @@
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
 
+(setq projectile-switch-project-action 'helm-projectile)
+
 ;; Ace-jump-mode (Vimperator for emacs)
 (require 'ace-jump-mode)
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
