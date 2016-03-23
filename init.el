@@ -289,7 +289,7 @@
 ;; We don't need to send email if we are not inside gnus.
 (global-set-key (kbd "C-x m") nil)
 
-(global-set-key (kbd "M-n") 'jump-char-forward)
+(global-set-key (kbd "C-c C-f") 'jump-char-forward)
 
 ;; Because I'm old, I need to highlight the line where my cursor is.
 (global-hl-line-mode 1)
