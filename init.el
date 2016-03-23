@@ -249,9 +249,6 @@
   (other-window -1))
 (global-set-key (kbd "M-O") 'prev-window)
 
-;; Make man pages open in the same window.
-(setq Man-notify-method 'pushy)
-
 ;; Projectile
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
