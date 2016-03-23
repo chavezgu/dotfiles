@@ -1,1 +1,3 @@
 source ~/.aliases
+
+export PATH="/home/chavezgu/bin/:$PATH"
