@@ -69,9 +69,9 @@
 ;; GRB: highlight trailing whitespace
 (set-default 'show-trailing-whitespace t)
 
-;; Shell to zsh
-(setq explicit-shell-file-name "/bin/zsh")
-(setq shell-file-name "/bin/zsh")
+;; Shell to mskh
+(setq explicit-shell-file-name "/bin/mksh")
+(setq shell-file-name "/bin/mksh")
 (setenv "SHELL" shell-file-name)
 
 (column-number-mode t)
