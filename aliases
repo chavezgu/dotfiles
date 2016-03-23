@@ -1,0 +1,13 @@
+# Random commands
+alias g="git"
+
+# Pacman
+alias pacin="sudo pacman -S"
+alias pacreps="sudo pacman -Ss"
+alias pacupg="sudo pacman -Syu"
+alias paclocs="sudo pacman -Qs"
+
+# Systemd
+
+# Journal
+alias jc="sudo journalctl"
