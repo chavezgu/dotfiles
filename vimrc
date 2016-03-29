@@ -79,7 +79,7 @@ set laststatus=2
 syntax enable
 
 " Set molokai colors
-colorscheme molokai
+" colorscheme molokai
 
 "line numbers. I guess
 set nu
