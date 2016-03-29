@@ -9,6 +9,7 @@ alias paclocs="sudo pacman -Qs"
 alias pacrem="sudo pacman -Rns"
 
 # Systemd
+alias sc="sudo systemctl"
 
 # Journal
 alias jc="sudo journalctl"
