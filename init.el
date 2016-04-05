@@ -129,8 +129,8 @@
 
 ;; Helm keybidings
 (global-set-key (kbd "M-x") 'helm-M-x)
-;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
-;; (global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-c h o") 'helm-occur)
 (global-set-key (kbd "C-h a") 'helm-apropos)
 
@@ -220,11 +220,6 @@
 
 ;; Imenu, because it's good.
 (global-set-key (kbd "M-i") 'helm-semantic-or-imenu)
-
-;; Let's go back to IDO for some tasks
-(ido-mode 1)
-(setq ido-everywhere t)
-(setq ido-enable-flex-matching t)
 
 ;; Set the wanted files.
 (add-to-list 'dired-guess-shell-alist-user '("\\.pdf\\'" "mupdf"))
