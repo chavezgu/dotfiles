@@ -214,6 +214,15 @@
 (setq org-agenda-window-setup 'current-window)
 (setq org-src-fontify-natively t)
 
+;;  Function for archiving done tasks.
+(defun org-archive-done-tasks ()
+  (interactive)
+  (org-map-entries
+   (lambda ()
+     (org-archive-subtree)
+     (setq org-map-continue-from (outline-previous-heading)))
+   "/DONE" 'tree))
+
 ;; Dired options
 (require 'dired-x)
 (setq dired-listing-switches "-alh")
