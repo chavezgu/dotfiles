@@ -1,6 +1,7 @@
 # Random commands
 alias g="git"
 alias ls="ls --color"
+alias _="sudo"
 
 # Pacman
 alias pacin="sudo pacman -S"
