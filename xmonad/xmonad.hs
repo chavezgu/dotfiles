@@ -15,8 +15,8 @@ myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">" }
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
 myConfig = defaultConfig
-        { terminal    = "st -e zsh"
+        { terminal    = "st"
         , modMask     = mod4Mask
         , borderWidth = 3
-        , logHook = updatePointer (Relative 0.5 0.5)
+        , logHook = updatePointer (0.5, 0.5) (0,0)
         }
