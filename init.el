@@ -264,12 +264,6 @@
 (require 'ace-jump-mode)
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 (global-set-key (kbd "C-c C-SPC") 'ace-jump-mode)
-;; Some erc stuff
-(require 'erc-goodies)
-(add-to-list 'erc-mode-hook (lambda ()
-                              (set (make-local-variable 'scroll-conservatively) 100)))
-(setq erc-hide-list '("JOIN" "PART" "QUIT"))
-
 
 ;; BBDB related
 (require 'bbdb)
