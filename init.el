@@ -352,9 +352,3 @@
 ;; Slime stuff
 (setq inferior-lisp-program "/usr/bin/sbcl")
 (setq slime-contribs '(slime-fancy))
-
-;; Display time
-(setq display-time-24hr-format t)
-(setq display-time-day-and-date t)
-(setq display-time-default-load-average nil)
-(display-time-mode 1)
