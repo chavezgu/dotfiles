@@ -1,4 +1,4 @@
 source ~/.aliases
 
 export BROWSER="firefox"
-export PATH="/home/egachav/bin/:$PATH"
+export PATH="/home/chavezgu/bin/:$PATH"
