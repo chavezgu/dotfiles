@@ -349,6 +349,13 @@
 
 (global-set-key (kbd "M-\'") 'gcg-switch-windows)
 
+;; Horrible code, but I'm just learning elisp.
+(defun gcg-switch-to-eshell ()
+  (interactive)
+  (progn
+    (switch-to-buffer "std")
+    (insert (format "~/\n"))))
+
 ;; Hooks for info mode
 (add-hook 'Info-mode-hook
           (lambda ()
