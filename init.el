@@ -200,8 +200,7 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
-(setq org-agenda-files (list "~/org/todos/amelia.org"
-                             "~/org/todos/personal.org"
+(setq org-agenda-files (list "~/org/todos/personal.org"
                              "~/org/todos/inbox.org"
                              "~/org/todos/lola.org"
                              "~/org/todos/errands.org"))
