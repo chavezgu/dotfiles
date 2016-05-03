@@ -74,6 +74,13 @@
 (setq shell-file-name "/bin/mksh")
 (setenv "SHELL" shell-file-name)
 
+;; eshell conf
+(require 'eshell)
+(require 'em-smart)
+(setq eshell-where-to-jump 'begin)
+(setq eshell-review-quick-commands nil)
+(setq eshell-smart-space-goes-to-end t)
+
 (column-number-mode t)
 
 ;; It's magit!
