@@ -322,7 +322,7 @@
 (global-hl-line-mode 1)
 
 ;; I want to see the TODO's and FIXME highlighted
-(hl-todo-mode 1)
+(hl-todo-mode)
 
 ;; Some semantic stuff that doesn't really work very well with
 ;; large code bases.
