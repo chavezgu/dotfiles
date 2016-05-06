@@ -175,6 +175,9 @@
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 (define-key helm-gtags-mode-map (kbd "M-]") 'helm-gtags-find-rtag)
 
+;; function-args is awesome
+(fa-config-default)
+
 ;; (require 'ggtags)
 ;; (add-hook 'c-mode-common-hook
 ;;           (lambda ()
