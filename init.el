@@ -375,6 +375,6 @@
             (local-set-key (kbd "RET") 'scroll-up-line)
             (local-set-key (kbd "o") 'Info-follow-nearest-node)))
 
-;; Slime stuff
-(setq inferior-lisp-program "/usr/bin/sbcl")
-(setq slime-contribs '(slime-fancy))
+;; Python stuff
+(add-hook 'python-mode-hook 'anaconda-mode)
+(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
