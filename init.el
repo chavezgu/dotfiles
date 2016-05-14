@@ -72,8 +72,8 @@
 (set-default 'show-trailing-whitespace t)
 
 ;; Shell to mskh
-(setq explicit-shell-file-name "/bin/mksh")
-(setq shell-file-name "/bin/mksh")
+(setq explicit-shell-file-name "/bin/bash")
+(setq shell-file-name "/bin/bash")
 (setenv "SHELL" shell-file-name)
 
 ;; eshell conf
