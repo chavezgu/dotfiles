@@ -9,6 +9,7 @@ alias pacreps="sudo pacman -Ss"
 alias pacupg="sudo pacman -Syu"
 alias paclocs="sudo pacman -Qs"
 alias pacrem="sudo pacman -Rns"
+alias pacupg="sudo pacman -Syu"
 
 # Systemd
 alias sc="sudo systemctl"
