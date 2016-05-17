@@ -1,0 +1,20 @@
+# Increase volume
+"pamixer --increase 5"
+   XF86AudioRaiseVolume
+
+# Increase volume
+"pamixer --decrease 5"
+   XF86AudioLowerVolume
+
+# Mute
+"pamixer --toggle-mute"
+   XF86AudioMute
+
+"playerctl play-pause"
+   XF86AudioPlay
+
+"playerctl next"
+   XF86AudioNext
+
+"playerctl previous"
+   XF86AudioPrev
