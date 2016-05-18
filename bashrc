@@ -1,43 +1,18 @@
-#Vi mode 
-# set -o vi
+#
+# ~/.bashrc
+#
 
-# Check for an interactive session
-[ -z "$PS1" ] && return
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-#enviroment variables
-PATH=$PATH:$HOME/bin:.
-CDPATH=.:~:~/Projects:/etc
-
-#Aliases
 alias ls='ls --color=auto'
-alias t='task'
-alias chavezgu="ssh chavezgu.com"
-alias gultec="ssh gchavez@linux.mty.itesm.mx"
-alias svim="sudo vim"
-alias spacman="sudo pacman"
+PS1='[\u@\h \W]\$ '
 
-PS1='[\u@\h \t \W][$(task count status:pending)]\$ '
-
-complete -cf sudo
-complete -cf man
+source ~/.aliases
 
 export BROWSER="firefox"
-export EDITOR="vim -f"
-export HISTSIZE=2000
-export HISTCONTROL=ignoreboth #ignore both duplicates and ignore in bash history
-export HISTIGNORE='ls:bg:fg:history'
-export HISTTIMEFORMAT='%F %T '
+export PATH="/home/egachav/bin/:$PATH"
 
-#ssh agent
-eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
-
-#functions
-function mkdircd () { 
-    mkdir -p "$@" && eval cd "\"\$$#\"";
-}
-
-upvimplugins() {
-    cd ~/dotfiles; 
-    git submodule foreach git pull origin master;
-    cd -;
-}
+# Completion
+complete -cf sudo
+complete -cf man
