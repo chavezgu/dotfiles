@@ -11,7 +11,7 @@ PS1='[\u@\h \W]\$ '
 source ~/.aliases
 
 export BROWSER="firefox"
-export PATH="/home/egachav/bin/:$PATH"
+export PATH="/home/chavezgu/bin/:$PATH"
 
 # Completion
 complete -cf sudo
