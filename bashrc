@@ -10,9 +10,11 @@ PS1='[\u@\h \W]\$ '
 
 source ~/.aliases
 
-export BROWSER="firefox"
-export PATH="/home/chavezgu/bin/:$PATH"
-
 # Completion
 complete -cf sudo
 complete -cf man
+
+export BROWSER="firefox"
+export GOPATH=$HOME/projects/go
+
+export PATH="/home/egachav/bin/:$PATH:$GOPATH/bin"
