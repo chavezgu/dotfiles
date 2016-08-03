@@ -366,9 +366,9 @@
 ;; Horrible code, but I'm just learning elisp.
 (defun gcg-switch-to-eshell ()
   (interactive)
-  (progn
-    (switch-to-buffer "std")
-    (insert (format "~/\n"))))
+  (switch-to-buffer (get-buffer "std")))
+
+(global-set-key (kbd "C-M-`") 'gcg-switch-to-eshell)
 
 ;; Hooks for info mode
 (add-hook 'Info-mode-hook
@@ -385,3 +385,9 @@
 (venv-initialize-interactive-shells) ;; if you want interactive shell support
 (venv-initialize-eshell) ;; if you want eshell support
 (setq venv-location "~/.virtualenvs")
+
+;; Always start a shell when we fire up emacs.
+(progn
+  (eshell)
+  (rename-buffer "std"))
+
