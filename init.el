@@ -396,6 +396,8 @@
 
 ;; Always start a shell when we fire up emacs.
 (progn
+  (split-window-right)
+  (other-window 1)
   (eshell)
   (rename-buffer "std"))
 
