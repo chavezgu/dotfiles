@@ -63,11 +63,6 @@
 (define-key yas-minor-mode-map (kbd "<tab>") 'yas-expand)
 (define-key yas-minor-mode-map (kbd "TAB") 'yas-expand)
 
-
-;; Use electric pair
-(electric-pair-mode 1)
-
-
 ;; GRB: highlight trailing whitespace
 (set-default 'show-trailing-whitespace t)
 
@@ -114,14 +109,10 @@
 ;; Some c-mode stuff
 (setq c-default-style "linux")
 
-;; Paredit
-(autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
-(add-hook 'emacs-lisp-mode-hook       #'enable-paredit-mode)
-(add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
-(add-hook 'ielm-mode-hook             #'enable-paredit-mode)
-(add-hook 'lisp-mode-hook             #'enable-paredit-mode)
-(add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
-(add-hook 'scheme-mode-hook           #'enable-paredit-mode)
+;; smartparens
+(require 'smartparens-config)
+(add-hook 'prog-mode-hook 'turn-on-smartparens-strict-mode)
+(add-hook 'markdown-mode-hook 'turn-on-smartparens-strict-mode)
 
 ;; Helm configuration
 (require 'helm)
