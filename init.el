@@ -93,6 +93,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(eshell-visual-commands
+   (quote
+    ("vi" "screen" "top" "less" "more" "lynx" "ncftp" "pine" "tin" "trn" "elm" "htop")))
  '(org-babel-load-languages (quote ((C . t) (emacs-lisp . t))))
  '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (eshell)))))
  '(shell-pop-universal-key "M-`")
