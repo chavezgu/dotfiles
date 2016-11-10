@@ -264,9 +264,9 @@
 (add-to-list 'dired-guess-shell-alist-user '("\\.mobi\\'" "ebook-viewer"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.mp4\\'" "mpv"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.mkv\\'" "mpv"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.png\\'" "feh"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.gif\\'" "feh"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.jpg\\'" "feh"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.png\\'" "eog"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.gif\\'" "eog"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.jpg\\'" "eog"))
 
 ;; Sudo in TRAMP
 (defun sudo ()
