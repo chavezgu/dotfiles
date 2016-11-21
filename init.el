@@ -384,3 +384,11 @@
   (eshell)
   (rename-buffer "std"))
 
+(require 'diminish)
+(diminish 'helm-mode)
+(diminish 'company-mode)
+(diminish 'yas-minor-mode)
+(diminish 'smartparens-mode)
+(diminish 'auto-revert-mode)
+(diminish 'helm-gtags-mode)
+
