@@ -7,6 +7,8 @@
 (package-initialize) ;; You might already have this line
 
 (load-theme 'monokai t)
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
 
 (setq-default inhibit-startup-screen t)
 
