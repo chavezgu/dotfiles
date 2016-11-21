@@ -186,16 +186,6 @@
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 (define-key helm-gtags-mode-map (kbd "M-]") 'helm-gtags-find-rtag)
 
-;; (require 'ggtags)
-;; (add-hook 'c-mode-common-hook
-;;           (lambda ()
-;;             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-;;               (ggtags-mode 1)
-;;               (setq-local eldoc-documentation-function #'ggtags-eldoc-function))))
-
-;; This is what we have to do to avoid mksh stuff
-(setq ggtags-executable-directory "/usr/bin/")
-
 ;; Company configuration
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
