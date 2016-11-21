@@ -114,10 +114,8 @@
 ;; Some c-mode stuff
 (setq c-default-style "linux")
 
-;; smartparens
-(require 'smartparens-config)
-(add-hook 'prog-mode-hook 'turn-on-smartparens-strict-mode)
-(add-hook 'markdown-mode-hook 'turn-on-smartparens-strict-mode)
+;; Electric pair
+(electric-pair-mode 1)
 
 ;; Helm configuration
 (require 'helm)
@@ -388,7 +386,5 @@
 (diminish 'helm-mode)
 (diminish 'company-mode)
 (diminish 'yas-minor-mode)
-(diminish 'smartparens-mode)
 (diminish 'auto-revert-mode)
 (diminish 'helm-gtags-mode)
-
