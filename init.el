@@ -188,7 +188,7 @@
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (add-to-list 'company-backends 'company-c-headers)
-(global-set-key (kbd "M-<tab>") 'company-complete)
+(global-set-key (kbd "<backtab>") 'company-complete)
 
 ;; Compile and Run,
 (global-set-key (kbd "C-<f11>") 'projectile-compile-project)
