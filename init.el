@@ -389,3 +389,6 @@
 (diminish 'yas-minor-mode)
 (diminish 'auto-revert-mode)
 (diminish 'helm-gtags-mode)
+(diminish 'anaconda-mode)
+(diminish 'projectile-mode)
+(diminish 'eldoc-mode)
