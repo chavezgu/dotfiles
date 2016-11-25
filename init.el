@@ -382,6 +382,7 @@
   (eshell)
   (rename-buffer "std"))
 
+;; Hide those pesky minor modes.
 (require 'diminish)
 (diminish 'helm-mode)
 (diminish 'company-mode)
