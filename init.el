@@ -98,6 +98,7 @@
  '(eshell-visual-commands
    (quote
     ("vi" "screen" "top" "less" "more" "lynx" "ncftp" "pine" "tin" "trn" "elm" "htop")))
+ '(list-command-history-max 100)
  '(org-babel-load-languages (quote ((C . t) (emacs-lisp . t))))
  '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (eshell)))))
  '(shell-pop-universal-key "M-`")
