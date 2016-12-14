@@ -100,6 +100,23 @@
     ("vi" "screen" "top" "less" "more" "lynx" "ncftp" "pine" "tin" "trn" "elm" "htop")))
  '(list-command-history-max 100)
  '(org-babel-load-languages (quote ((C . t) (emacs-lisp . t))))
+ '(safe-local-variable-values
+   (quote
+    ((eval c-set-offset
+           (quote arglist-close)
+           0)
+     (eval c-set-offset
+           (quote arglist-intro)
+           (quote ++))
+     (eval c-set-offset
+           (quote case-label)
+           0)
+     (eval c-set-offset
+           (quote statement-case-open)
+           0)
+     (eval c-set-offset
+           (quote substatement-open)
+           0))))
  '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (eshell)))))
  '(shell-pop-universal-key "M-`")
  '(shell-pop-windown-position "bottom")
