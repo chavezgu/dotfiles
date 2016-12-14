@@ -68,3 +68,26 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
+;; GRB: use C-o and M-o to switch windows
+(global-set-key (kbd "M-o") 'other-window)
+(defun prev-window ()
+  (interactive)
+  (other-window -1))
+(global-set-key (kbd "M-O") 'prev-window)
+
+;; Window management
+(defun gcg-display-in-selected-window (buffer window &optional alist)
+  (with-selected-window window
+    (switch-to-buffer buffer)
+    window))
+
+(defun gcg-switch-windows ()
+  (interactive)
+  (let* ((other-window (nth 1 (window-list)))
+        (other-buffer (window-buffer other-window))
+        (current-buffer (current-buffer)))
+    (switch-to-buffer other-buffer)
+    (gcg-display-in-selected-window current-buffer other-window)
+    (select-window other-window)))
+
+(global-set-key (kbd "M-\'") 'gcg-switch-windows)
