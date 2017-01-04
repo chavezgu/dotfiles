@@ -394,6 +394,10 @@
   (eshell)
   (rename-buffer "std"))
 
+;; Common Lisp!
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq slime-contribs '(slime-fancy))
+
 ;; Hide those pesky minor modes.
 (require 'diminish)
 (diminish 'helm-mode)
