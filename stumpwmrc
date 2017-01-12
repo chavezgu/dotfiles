@@ -1,3 +1,3 @@
-(defparameter X-TERM "exec st -e bash")
+(defparameter X-TERM "exec sakura")
 
 (define-key *root-map* (kbd "c") X-TERM)
