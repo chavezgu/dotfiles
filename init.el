@@ -318,9 +318,6 @@
 ;; Because I'm old, I need to highlight the line where my cursor is.
 (global-hl-line-mode 1)
 
-;; I want to see the TODO's and FIXME highlighted
-(hl-todo-mode)
-
 ;; Some semantic stuff that doesn't really work very well with
 ;; large code bases.
 
