@@ -296,11 +296,6 @@
 
 (setq projectile-switch-project-action 'helm-projectile)
 
-;; Ace-jump-mode (Vimperator for emacs)
-(require 'ace-jump-mode)
-(global-set-key (kbd "C-c SPC") 'ace-jump-mode)
-(global-set-key (kbd "C-c C-SPC") 'ace-jump-mode)
-
 ;; We follow Steve Yegge advice
 (global-set-key "\C-x\C-m" 'helm-M-x)
 (global-set-key "\C-c\C-m" 'helm-M-x)
