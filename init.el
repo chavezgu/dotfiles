@@ -275,7 +275,7 @@
 (add-to-list 'dired-guess-shell-alist-user '("\\.jpg\\'" "gpicview"))
 
 ;; Sudo in TRAMP
-(defun sudo ()
+(defun sudo-this ()
   "Use TRAMP to `sudo' the current buffer"
   (interactive)
   (when buffer-file-name
@@ -332,6 +332,13 @@
 (require 'tramp)
 (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
 (setq enable-remote-dir-locals t)
+
+;; Enable a proper sudo in eshell
+(require 'em-tramp)
+(setq eshell-prefer-lisp-functions t)
+(setq eshell-prefer-lisp-variables t)
+(setq password-cache t) ; enable password caching
+(setq password-cache-expiry 600) ; for 10 minutes(time in secs)
 
 ;; Same as C-x 1
 (global-set-key (kbd "C-x 9") 'delete-other-windows)
