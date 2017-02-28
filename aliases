@@ -19,3 +19,7 @@ alias jc="sudo journalctl"
 
 # Global
 alias global="/usr/bin/global"
+
+# Docker
+alias docker-images-clean='docker rmi $(docker images -a -q)'
+alias docker-rm-all='docker rm --force $(docker ps -a -q)'
