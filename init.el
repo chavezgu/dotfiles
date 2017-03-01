@@ -391,13 +391,6 @@
   (eshell)
   (rename-buffer "std"))
 
-;; Common Lisp!
-(setq inferior-lisp-program "/usr/bin/sbcl")
-(setq slime-contribs '(slime-fancy))
-
-;; We write pollen
-(global-set-key (kbd "M-\\") "◊")
-
 ;; Hide those pesky minor modes.
 (require 'diminish)
 (diminish 'helm-mode)
@@ -408,3 +401,10 @@
 (diminish 'anaconda-mode)
 (diminish 'projectile-mode)
 (diminish 'eldoc-mode)
+
+;; Common Lisp!
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq slime-contribs '(slime-fancy))
+
+;; We write pollen
+(global-set-key (kbd "M-\\") "◊")
