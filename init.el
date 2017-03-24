@@ -203,7 +203,12 @@
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (add-to-list 'company-backends 'company-c-headers)
+(add-to-list 'company-backends 'company-gtags)
 (global-set-key (kbd "<backtab>") 'company-complete)
+
+;; No semantics or clangs. Just tags.
+(setq company-backends (delete 'company-semantic company-backends))
+(setq company-backends (delete 'company-clang company-backends))
 
 ;; Compile and Run,
 (global-set-key (kbd "C-<f11>") 'projectile-compile-project)
@@ -319,18 +324,6 @@
 ;; Because I'm old, I need to highlight the line where my cursor is.
 (global-hl-line-mode 1)
 
-;; Some semantic stuff that doesn't really work very well with
-;; large code bases.
-;; (require 'cc-mode)
-;; (require 'semantic)
-;; (global-semanticdb-minor-mode 1)
-;; (global-semantic-idle-scheduler-mode 1)
-;; (semantic-mode 1)
-;; (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
-;; (setq-local eldoc-documentation-function #'ggtags-eldoc-function)
-;; (semantic-add-system-include "/usr/include/boost" 'c++-mode)
-;; (semantic-add-system-include "~/linux/kernel")
-;; (semantic-add-system-include "~/linux/include")
 
 (require 'tramp)
 (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
