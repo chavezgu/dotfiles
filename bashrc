@@ -22,3 +22,4 @@ export PATH="/home/egachav/bin/:$PATH:$GOPATH/bin"
 # Python config
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
+export GTAGSLABEL=pygments
