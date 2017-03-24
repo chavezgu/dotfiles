@@ -394,6 +394,10 @@
   (eshell)
   (rename-buffer "std"))
 
+;;; Paredit Mode
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+(add-hook 'ielm-mode-hook 'paredit-mode)
+
 ;; Hide those pesky minor modes.
 (require 'diminish)
 (diminish 'helm-mode)
