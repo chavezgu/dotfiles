@@ -404,7 +404,7 @@
 
 ;; Common Lisp!
 (setq inferior-lisp-program "/usr/bin/sbcl")
-(setq slime-contribs '(slime-fancy))
+(setq slime-contribs '(slime-fancy slime-company))
 
 ;; We write pollen
 (global-set-key (kbd "M-\\") "◊")
