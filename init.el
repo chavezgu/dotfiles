@@ -114,7 +114,7 @@
      (eval c-set-offset
            (quote substatement-open)
            0))))
- '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (eshell)))))
+ '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (shell)))))
  '(shell-pop-universal-key "M-`")
  '(shell-pop-windown-position "bottom")
  '(show-paren-mode t)
@@ -358,11 +358,11 @@
 (global-set-key (kbd "M-\'") 'gcg-switch-windows)
 
 ;; Horrible code, but I'm just learning elisp.
-(defun gcg-switch-to-eshell ()
+(defun gcg-switch-to-shell ()
   (interactive)
   (switch-to-buffer (get-buffer "std")))
 
-(global-set-key (kbd "C-M-`") 'gcg-switch-to-eshell)
+(global-set-key (kbd "C-M-`") 'gcg-switch-to-shell)
 
 ;; Hooks for info mode
 (add-hook 'Info-mode-hook
@@ -384,7 +384,7 @@
 (progn
   (split-window-right)
   (other-window 1)
-  (eshell)
+  (shell)
   (rename-buffer "std"))
 
 ;;; Paredit Mode
