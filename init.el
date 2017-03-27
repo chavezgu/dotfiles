@@ -371,10 +371,6 @@
             (local-set-key (kbd "RET") 'scroll-up-line)
             (local-set-key (kbd "o") 'Info-follow-nearest-node)))
 
-;; Python stuff
-(add-hook 'python-mode-hook 'anaconda-mode)
-(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
-
 (require 'virtualenvwrapper)
 (venv-initialize-interactive-shells) ;; if you want interactive shell support
 (venv-initialize-eshell) ;; if you want eshell support
