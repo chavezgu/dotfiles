@@ -114,7 +114,7 @@
      (eval c-set-offset
            (quote substatement-open)
            0))))
- '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (shell)))))
+ '(shell-pop-shell-type (quote ("shell" "*shell-1*" (lambda nil (shell)))))
  '(shell-pop-universal-key "M-`")
  '(shell-pop-windown-position "bottom")
  '(show-paren-mode t)
@@ -361,7 +361,7 @@
 ;; Horrible code, but I'm just learning elisp.
 (defun gcg-switch-to-shell ()
   (interactive)
-  (switch-to-buffer (get-buffer "std")))
+  (switch-to-buffer (get-buffer "*shell*")))
 
 (global-set-key (kbd "C-M-`") 'gcg-switch-to-shell)
 
@@ -381,8 +381,7 @@
 (progn
   (split-window-right)
   (other-window 1)
-  (shell)
-  (rename-buffer "std"))
+  (shell))
 
 ;;; Paredit Mode
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
