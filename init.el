@@ -77,8 +77,8 @@
 (setq eshell-review-quick-commands nil)
 (setq eshell-smart-space-goes-to-end t)
 (setq eshell-prompt-function
-  (lambda ()
-      (if (= (user-uid) 0) " # " " $ ")))
+      (lambda ()
+        (if (= (user-uid) 0) " # " " $ ")))
 
 
 (column-number-mode t)
@@ -219,7 +219,7 @@
 (defun buffer-mode (buffer-or-string)   ;
   "Returns the major mode associated with a buffer."
   (with-current-buffer buffer-or-string
-     major-mode))
+    major-mode))
 
 (setq
  ;; use gdb-many-windows by default
@@ -350,8 +350,8 @@
 (defun gcg-switch-windows ()
   (interactive)
   (let* ((other-window (nth 1 (window-list)))
-        (other-buffer (window-buffer other-window))
-        (current-buffer (current-buffer)))
+         (other-buffer (window-buffer other-window))
+         (current-buffer (current-buffer)))
     (switch-to-buffer other-buffer)
     (gcg-display-in-selected-window current-buffer other-window)
     (select-window other-window)))
