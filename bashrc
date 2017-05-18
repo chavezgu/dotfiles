@@ -17,7 +17,7 @@ complete -cf man
 export BROWSER="firefox"
 export GOPATH=$HOME/projects/go
 
-export PATH="/home/egachav/bin/:$PATH:$GOPATH/bin"
+export PATH="/home/chavezgu/bin/:$PATH:$GOPATH/bin"
 
 # Python config
 export WORKON_HOME=~/.virtualenvs
