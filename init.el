@@ -386,6 +386,9 @@
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
 (add-hook 'ielm-mode-hook 'paredit-mode)
 
+;;; IRC
+(setq erc-hide-list '("JOIN" "PART" "QUIT"))
+
 ;; Hide those pesky minor modes.
 (require 'diminish)
 (diminish 'helm-mode)
