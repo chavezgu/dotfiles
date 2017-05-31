@@ -210,6 +210,21 @@
 (setq company-backends (delete 'company-semantic company-backends))
 (setq company-backends (delete 'company-clang company-backends))
 
+;;; C settings: 8 tabs, linux style
+(defun gcg-c-mode-hook ()
+  (setq c-indentation-style "linux"
+        c-basic-offset 8
+        tab-with 8
+        indent-tabs-mode t))
+(add-hook 'c-mode-hook 'gcg-c-mode-hook)
+
+;;; C++ settings: 4 spaces, no tabs,
+(defun gcg-c++-mode-hook ()
+  (setq c-indentation-style "stroustrup"
+        c-basic-offset 4
+        indent-tabs-mode nil))
+(add-hook 'c++-mode-hook 'gcg-c++-mode-hook)
+
 ;; Compile and Run,
 (global-set-key (kbd "C-<f11>") 'projectile-compile-project)
 (global-set-key (kbd "<f5>") 'projectile-run-project)
