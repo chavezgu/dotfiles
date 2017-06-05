@@ -364,7 +364,7 @@
 ;; Horrible code, but I'm just learning elisp.
 (defun gcg-switch-to-shell ()
   (interactive)
-  (switch-to-buffer (get-buffer "*shell*")))
+  (switch-to-buffer (get-buffer "std")))
 
 (global-set-key (kbd "C-M-`") 'gcg-switch-to-shell)
 
@@ -384,7 +384,7 @@
 (progn
   (split-window-right)
   (other-window 1)
-  (shell))
+  (shell "std"))
 
 ;;; Paredit Mode
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
