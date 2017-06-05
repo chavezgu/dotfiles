@@ -103,7 +103,6 @@
      (eval c-set-offset
            (quote substatement-open)
            0))))
- '(shell-pop-shell-type (quote ("shell" "*shell-1*" (lambda nil (shell)))))
  '(shell-pop-universal-key "M-`")
  '(shell-pop-windown-position "bottom")
  '(show-paren-mode t)
