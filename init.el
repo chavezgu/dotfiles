@@ -70,17 +70,6 @@
 (setq shell-file-name "/bin/bash")
 (setenv "SHELL" shell-file-name)
 
-;; eshell conf
-(require 'eshell)
-(require 'em-smart)
-(setq eshell-where-to-jump 'begin)
-(setq eshell-review-quick-commands nil)
-(setq eshell-smart-space-goes-to-end t)
-(setq eshell-prompt-function
-      (lambda ()
-        (if (= (user-uid) 0) " # " " $ ")))
-
-
 (column-number-mode t)
 
 ;; It's magit!
