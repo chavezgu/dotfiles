@@ -85,7 +85,7 @@
    (quote
     ("vi" "screen" "top" "less" "more" "lynx" "ncftp" "pine" "tin" "trn" "elm" "htop")))
  '(list-command-history-max 100)
- '(org-babel-load-languages (quote ((C . t) (emacs-lisp . t))))
+ '(org-babel-load-languages (quote ((C . t) (emacs-lisp . t) (sh . t))))
  '(safe-local-variable-values
    (quote
     ((eval c-set-offset
