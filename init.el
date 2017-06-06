@@ -402,6 +402,7 @@
 (diminish 'anaconda-mode)
 (diminish 'projectile-mode)
 (diminish 'eldoc-mode)
+(diminish 'paredit-mode)
 
 ;; Common Lisp!
 (setq inferior-lisp-program "/usr/bin/sbcl")
