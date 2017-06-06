@@ -392,6 +392,9 @@
 ;;; IRC
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 
+;;; docker-stuff
+(setq docker-containers-show-all nil)
+
 ;; Hide those pesky minor modes.
 (require 'diminish)
 (diminish 'helm-mode)
