@@ -74,7 +74,7 @@
 
 ;; It's magit!
 (require 'magit)
-(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x g") 'gcg-check-magit)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -364,6 +364,12 @@
 (defun gcg-switch-to-shell ()
   (interactive)
   (switch-to-buffer (get-buffer "std")))
+
+(defun gcg-check-magit ()
+  (interactive)
+  (if (not (file-remote-p default-directory))
+      (magit-status)
+    (message "Don't run magit on remote repos")))
 
 (global-set-key (kbd "C-M-`") 'gcg-switch-to-shell)
 
