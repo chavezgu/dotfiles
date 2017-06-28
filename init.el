@@ -65,9 +65,10 @@
 ;; GRB: highlight trailing whitespace
 (set-default 'show-trailing-whitespace t)
 
-;; Shell to mskh
+;; Shell settings
 (setq explicit-shell-file-name "/bin/bash")
 (setq shell-file-name "/bin/bash")
+(setq shell-command-switch "-ic")
 (setenv "SHELL" shell-file-name)
 
 (column-number-mode t)
