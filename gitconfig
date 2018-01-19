@@ -1,23 +1,3 @@
 [user]
         name = Gabriel Chavez
         email = gabriel@chavezgu.com
-[alias]
-        co = checkout
-        br = branch
-        ci = commit --verbose
-        st = status
-        ff = merge --ff-only
-        pullff = pull --ff-only
-        noff = merge --no-ff
-        unstage = reset HEAD --
-        last = log -1 HEAD
-        di = diff
-        dc = diff --cached
-        pom = push origin master
-[merge]
-        tool = vimdiff
-[color]
-        ui = auto
-[core]
-        editor = vim
-        excludesfile = /home/chavezgu/.gitignore
