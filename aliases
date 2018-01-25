@@ -3,13 +3,6 @@ alias g="git"
 alias ls="ls --color"
 alias _="sudo"
 
-# Pacman
-alias pacin="sudo pacman -S"
-alias pacreps="sudo pacman -Ss"
-alias pacupg="sudo pacman -Syu"
-alias paclocs="sudo pacman -Qs"
-alias pacrem="sudo pacman -Rns"
-alias pacupg="sudo pacman -Syu"
 
 # Systemd
 alias sc="sudo systemctl"
