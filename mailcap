@@ -1,9 +1,0 @@
-text/html;                      firefox %s; nametemplate=%s.html
-text/html;                      links -dump %s; nametemplate=%s.html; copiousoutput
-image/*;      firefox %s;
-application/vnd.ms-powerpoint; libreoffice %s;
-video/*;        mplayer %s;
-application/x-gunzip;   gzcat; copiousoutput
-application/x-tar-gz; gunzip -c %s | tar -tf - ; copiousoutput
-application/postscript; ps2ascii %s; copiousoutput
-application/pdf; mupdf %s; copiousoutput
