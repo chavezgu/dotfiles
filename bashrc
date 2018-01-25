@@ -14,7 +14,7 @@ source ~/.aliases
 complete -cf sudo
 complete -cf man
 
-export BROWSER="firefox"
+export BROWSER="google-chrome"
 export GOPATH=$HOME/projects/go
 
 export PATH="/home/chavezgu/bin/:$PATH:$GOPATH/bin"
