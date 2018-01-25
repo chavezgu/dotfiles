@@ -1,5 +1,0 @@
-[ui]
-username = Gabriel Chavez <gabrielchavez02@gmail.com>
-
-[extensions]
-prompt = /usr/lib/python2.7/site-packages/hgext/prompt.py
