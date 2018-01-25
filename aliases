@@ -11,6 +11,3 @@ alias sc="sudo systemctl"
 alias jc="sudo journalctl"
 
 
-# Docker
-alias docker-images-clean='docker rmi $(docker images -a -q)'
-alias docker-rm-all='docker rm --force $(docker ps -a -q)'
