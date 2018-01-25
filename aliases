@@ -17,8 +17,6 @@ alias sc="sudo systemctl"
 # Journal
 alias jc="sudo journalctl"
 
-# Global
-alias global="/usr/bin/global"
 
 # Docker
 alias docker-images-clean='docker rmi $(docker images -a -q)'
