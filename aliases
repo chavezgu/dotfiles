@@ -3,7 +3,6 @@ alias g="git"
 alias ls="ls --color"
 alias _="sudo"
 
-
 # Systemd
 alias sc="sudo systemctl"
 
