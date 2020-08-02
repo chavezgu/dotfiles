@@ -1,0 +1,8 @@
+{
+    "editor.fontSize": 18,
+    "window.restoreWindows": "none",
+    "window.zoomLevel": 0,
+    "remote.SSH.remotePlatform": {
+        "45.79.248.115": "linux"
+    }
+}
