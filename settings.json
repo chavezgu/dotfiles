@@ -1,8 +1,12 @@
 {
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
+    "workbench.sideBar.location": "left",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.multiCursorModifier": "alt",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 0,
-    "remote.SSH.remotePlatform": {
-        "45.79.248.115": "linux"
-    }
+    "window.zoomLevel": 1,
+    "powershell.integratedConsole.suppressStartupBanner": true,
+    "diffEditor.ignoreTrimWhitespace": false
 }
