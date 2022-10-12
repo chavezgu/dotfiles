@@ -1,12 +1,14 @@
 {
     "editor.fontSize": 16,
+    "editor.fontFamily": "Consolas",
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
     "workbench.sideBar.location": "left",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.multiCursorModifier": "alt",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 1,
-    "powershell.integratedConsole.suppressStartupBanner": true,
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.zoomLevel": 1
 }
