@@ -1,3 +1,5 @@
 [user]
         name = Gabriel Chavez
         email = gabriel@chavezgu.com
+[core]
+	editor = vim
