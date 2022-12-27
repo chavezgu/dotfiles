@@ -1,6 +1,6 @@
 {
     "editor.fontSize": 16,
-    "editor.fontFamily": "Consolas",
+    "editor.fontFamily": "'Cascadia Code'",
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
     "workbench.sideBar.location": "left",
