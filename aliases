@@ -8,5 +8,3 @@ alias sc="sudo systemctl"
 
 # Journal
 alias jc="sudo journalctl"
-
-
