@@ -57,9 +57,3 @@
 (global-set-key (kbd "C-c l") #'org-store-link)
 (global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
-
-
-;; Appearance settings
-(custom-set-faces
- '(default ((t (:family "Cascadia Code" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
-(load-theme 'tango-dark)
