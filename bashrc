@@ -13,3 +13,5 @@ source ~/.aliases
 # Completion
 complete -cf sudo
 complete -cf man
+
+export EDITOR="vim"
