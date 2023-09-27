@@ -1,6 +1,7 @@
 # Random commands
 alias g="git"
 alias ls="ls --color"
+alias grep='grep --color=auto'
 alias _="sudo"
 
 # Systemd
