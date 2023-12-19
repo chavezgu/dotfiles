@@ -8,7 +8,10 @@
     "editor.multiCursorModifier": "alt",
     "window.restoreWindows": "none",
     "diffEditor.ignoreTrimWhitespace": false,
+<<<<<<< HEAD
     "workbench.editor.empty.hint": "hidden",
+=======
+>>>>>>> fc837fa (vscode: Remove workbench option)
     "security.workspace.trust.untrustedFiles": "open",
     "window.zoomLevel": 1,
     "[python]": {
