@@ -58,5 +58,9 @@
 (global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
 
+;; Let's have this back:
+(custom-set-faces
+ '(default ((t (:family "Cascadia Code" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
+
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
