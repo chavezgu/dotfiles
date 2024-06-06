@@ -59,8 +59,8 @@
 (global-set-key (kbd "C-c c") #'org-capture)
 
 ;; Let's have this back:
-;; (custom-set-faces
-;;  '(default ((t (:family "Hack Regular" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
+(custom-set-faces
+ '(default ((t (:family "Source Code Pro Regular" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
 
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
