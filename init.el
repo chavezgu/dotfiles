@@ -64,21 +64,21 @@
  '(default ((t (:family "Source Code Pro Regular" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
 
 ;; Move the current window to the other side
-(defun ged-display-in-selected-window (buffer window &optional alist)
+(defun my-display-in-selected-window (buffer window &optional alist)
   (with-selected-window window
     (switch-to-buffer buffer)
     window))
 
-(defun ged-switch-windows ()
+(defun my-switch-windows ()
   (interactive)
   (let* ((other-window (nth 1 (window-list)))
          (other-buffer (window-buffer other-window))
          (current-buffer (current-buffer)))
     (switch-to-buffer other-buffer)
-    (ged-display-in-selected-window current-buffer other-window)
+    (my-display-in-selected-window current-buffer other-window)
     (select-window other-window)))
 
-(global-set-key (kbd "M-å") 'ged-switch-windows)
+(global-set-key (kbd "M-å") 'my-switch-windows)
 
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
