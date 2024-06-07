@@ -1,6 +1,7 @@
 ;; Requires
 (require 'uniquify)
 (require 'package)
+(require 'ansi-color)
 
 ;; Modes
 (ido-mode t)
@@ -62,6 +63,12 @@
 ;; Let's have this back:
 (custom-set-faces
  '(default ((t (:family "Source Code Pro Regular" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
+
+;; Some weird compilation thing, that should be part of emacs
+(defun my-ansi-colorize-buffer ()
+  (let ((buffer-read-only nil))
+    (ansi-color-apply-on-region (point-min) (point-max))))
+(add-hook 'compilation-filter-hook 'my-ansi-colorize-buffer)
 
 ;; Move the current window to the other side
 (defun my-display-in-selected-window (buffer window &optional alist)
