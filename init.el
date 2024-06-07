@@ -78,7 +78,7 @@
     (ged-display-in-selected-window current-buffer other-window)
     (select-window other-window)))
 
-(global-set-key (kbd "M-\'") 'ged-switch-windows)
+(global-set-key (kbd "M-å") 'ged-switch-windows)
 
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
