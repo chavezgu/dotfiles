@@ -5,7 +5,6 @@
 
 ;; Modes
 (ido-mode t)
-(menu-bar-mode -1)
 (save-place-mode 1)
 (show-paren-mode 1)
 (savehist-mode 1)
@@ -24,7 +23,6 @@
       apropos-do-all t
       mouse-yank-at-point t
       require-final-newline t
-      visible-bell t
       load-prefer-newer t
       backup-by-copying t
       frame-inhibit-implied-resize t
@@ -34,6 +32,8 @@
       ediff-window-setup-function 'ediff-setup-windows-plain
       find-file-visit-truename t
       make-backup-files nil
+      mac-option-key-is-meta t
+      mac-right-option-modifier nil
       custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 ;; Finnish keyboard things
@@ -62,7 +62,7 @@
 
 ;; Let's have this back:
 (custom-set-faces
- '(default ((t (:family "Source Code Pro Regular" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
+ '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 160 :width normal)))))
 
 ;; Some weird compilation thing, that should be part of emacs
 (defun my-ansi-colorize-buffer ()
