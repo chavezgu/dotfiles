@@ -1,6 +1,6 @@
 {
     "editor.fontSize": 16,
-    "editor.fontFamily": "'Caskaydiamono Nerd Font Mono'",
+    "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace",
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
     "workbench.sideBar.location": "left",
