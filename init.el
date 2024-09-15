@@ -78,12 +78,14 @@
 
 (defun my-switch-windows ()
   (interactive)
-  (let* ((other-window (nth 1 (window-list)))
-         (other-buffer (window-buffer other-window))
-         (current-buffer (current-buffer)))
-    (switch-to-buffer other-buffer)
-    (my-display-in-selected-window current-buffer other-window)
-    (select-window other-window)))
+  (unless (= 1 (length (window-list)))
+    (let* ((other-window (nth 1 (window-list)))
+           (other-buffer (window-buffer other-window))
+           (current-buffer (current-buffer)))
+      (switch-to-buffer other-buffer)
+      (my-display-in-selected-window current-buffer other-window)
+      (select-window other-window))
+    ))
 
 (global-set-key (kbd "M-å") 'my-switch-windows)
 
