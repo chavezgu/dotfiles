@@ -91,4 +91,4 @@
 (global-set-key (kbd "M-å") 'my-switch-windows)
 
 ;; Tango dark is decent and it's part of emacs
-(load-theme 'deeper-blue)
+(load-theme 'tango-dark)
