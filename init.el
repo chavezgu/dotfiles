@@ -37,9 +37,9 @@
 
 ;; Finnish keyboard things
 (global-set-key (kbd "M-;") 'beginning-of-buffer)
-(global-set-key (kbd "M-�") 'comment-dwim)
+(global-set-key (kbd "M-ö") 'comment-dwim)
 (global-set-key (kbd "M-:") 'end-of-buffer)
-(global-set-key (kbd "M-�") 'eval-expression)
+(global-set-key (kbd "M-ä") 'eval-expression)
 (global-set-key (kbd "M--") 'hippie-expand)
 (global-set-key (kbd "C--") 'undo)
 
@@ -86,7 +86,7 @@
       (select-window other-window))
     ))
 
-(global-set-key (kbd "M-�") 'my-switch-windows)
+(global-set-key (kbd "M-å") 'my-switch-windows)
 
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
