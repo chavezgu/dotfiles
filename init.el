@@ -33,8 +33,6 @@
       ediff-window-setup-function 'ediff-setup-windows-plain
       find-file-visit-truename t
       make-backup-files nil
-      mac-option-key-is-meta t
-      mac-right-option-modifier nil
       custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 ;; Finnish keyboard things
