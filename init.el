@@ -39,9 +39,9 @@
 
 ;; Finnish keyboard things
 (global-set-key (kbd "M-;") 'beginning-of-buffer)
-(global-set-key (kbd "M-ö") 'comment-dwim)
+(global-set-key (kbd "M-ï¿½") 'comment-dwim)
 (global-set-key (kbd "M-:") 'end-of-buffer)
-(global-set-key (kbd "M-ä") 'eval-expression)
+(global-set-key (kbd "M-ï¿½") 'eval-expression)
 (global-set-key (kbd "M--") 'hippie-expand)
 (global-set-key (kbd "C--") 'undo)
 
@@ -63,7 +63,7 @@
 
 ;; Let's have this back:
 (custom-set-faces
- '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 160 :width normal)))))
+ '(default ((t (:family "CaskaydiaCove Nerd Font Mono" :foundry "unknown" :slant normal :weight normal :height 160 :width normal)))))
 
 ;; Some weird compilation thing, that should be part of emacs
 (defun my-ansi-colorize-buffer ()
@@ -88,7 +88,7 @@
       (select-window other-window))
     ))
 
-(global-set-key (kbd "M-å") 'my-switch-windows)
+(global-set-key (kbd "M-ï¿½") 'my-switch-windows)
 
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
