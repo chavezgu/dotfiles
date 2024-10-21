@@ -35,6 +35,7 @@
       mac-option-key-is-meta t
       mac-right-option-modifier nil
       fill-column 80
+      inhibit-startup-message t
       custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 ;; Finnish keyboard things
