@@ -4,7 +4,7 @@
 (require 'ansi-color)
 
 ;; Modes
-(fido-mode t)
+(fido-vertical-mode t)
 (save-place-mode 1)
 (show-paren-mode 1)
 (savehist-mode 1)
