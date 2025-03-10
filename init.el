@@ -44,6 +44,7 @@
 (global-set-key (kbd "M-ä") 'eval-expression)
 (global-set-key (kbd "M--") 'hippie-expand)
 (global-set-key (kbd "C--") 'undo)
+(global-set-key (kbd "M-\"") 'mark-word)
 
 ;; Better global keybindings
 (global-set-key (kbd "C-x C-b") 'ibuffer)
