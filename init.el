@@ -32,8 +32,6 @@
       ediff-window-setup-function 'ediff-setup-windows-plain
       find-file-visit-truename t
       make-backup-files nil
-      mac-option-key-is-meta t
-      mac-right-option-modifier nil
       fill-column 80
       inhibit-startup-message t
       custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -65,7 +63,7 @@
 
 ;; Let's have this back:
 (custom-set-faces
- '(default ((t (:family "Monaco" :foundry "unknown" :slant normal :weight normal :height 160 :width normal)))))
+ '(default ((t (:family "CaskaydiaCove Nerd Font Mono" :foundry "unknown" :slant normal :weight normal :height 160 :width normal)))))	
 
 ;; Some weird compilation thing, that should be part of emacs
 (defun my-ansi-colorize-buffer ()
