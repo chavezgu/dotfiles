@@ -5,6 +5,7 @@
 
 ;; Modes
 (fido-vertical-mode t)
+(menu-bar-mode -1)
 (save-place-mode 1)
 (show-paren-mode 1)
 (savehist-mode 1)
