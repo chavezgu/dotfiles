@@ -2,6 +2,7 @@
 (require 'uniquify)
 (require 'package)
 (require 'ansi-color)
+(require 'org)
 
 ;; Modes
 (fido-vertical-mode t)
@@ -61,6 +62,11 @@
 (global-set-key (kbd "C-c l") #'org-store-link)
 (global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
+(setq org-default-notes-file (concat org-directory "/notes.org"))
+
+;; Org-mode spellchecking configuration
+(setq ispell-program-name "enchant-2")
+(setq ispell-dictionary "fi")
 
 ;; Let's have this back:
 (custom-set-faces
