@@ -98,7 +98,7 @@
 (global-set-key (kbd "M-å") 'my-switch-windows)
 
 ;; Tango dark is decent and it's part of emacs
-(load-theme 'tango-dark)
+(load-theme 'tango)
 ;; Melpa stuff
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
