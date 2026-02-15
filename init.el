@@ -69,9 +69,8 @@
 (setq ispell-program-name "enchant-2")
 (setq ispell-dictionary "fi")
 
-;; Let's have this back:
-(custom-set-faces
- '(default ((t (:family "CaskaydiaMono Nerd Font Mono" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
+;; (setq ispell-program-name "enchant-2")
+;; (setq ispell-dictionary "fi")
 
 ;; Some weird compilation thing, that should be part of emacs
 (defun my-ansi-colorize-buffer ()
