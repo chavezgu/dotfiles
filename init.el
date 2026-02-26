@@ -65,6 +65,10 @@
 (global-set-key (kbd "C-c b") #'org-switchb)
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
+;; Org-mode spellchecking configuration
+(setq ispell-program-name "enchant-2")
+(setq ispell-dictionary "fi")
+
 ;; Some weird compilation thing, that should be part of emacs
 (defun my-ansi-colorize-buffer ()
   (let ((buffer-read-only nil))
