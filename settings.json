@@ -11,5 +11,10 @@
     "workbench.editor.empty.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "window.zoomLevel": 1,
-    "terminal.integrated.fontSize": 14
+    "terminal.integrated.fontSize": 14,
+    "files.readonlyInclude": {
+        "**/.cargo/registry/src/**/*.rs": true,
+        "**/.cargo/git/checkouts/**/*.rs": true,
+        "**/lib/rustlib/src/rust/library/**/*.rs": true,
+    },
 }
