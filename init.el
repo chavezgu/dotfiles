@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;; Requires
 (require 'uniquify)
 (require 'package)
