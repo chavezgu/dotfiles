@@ -55,6 +55,7 @@
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "C-c C-k") 'kill-region)
 (global-set-key (kbd "M-o") 'other-window)
+(global-set-key (kbd "M-å") 'rotate-windows)
 
 ;; org-mode things
 (global-set-key (kbd "C-c l") #'org-store-link)
@@ -73,25 +74,6 @@
 
 ;; Some weird compilation thing, that should be part of emacs
 (add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
-
-;; Move the current window to the other side
-(defun my-display-in-selected-window (buffer window &optional alist)
-  (with-selected-window window
-    (switch-to-buffer buffer)
-    window))
-
-(defun my-switch-windows ()
-  (interactive)
-  (unless (= 1 (length (window-list)))
-    (let* ((other-window (nth 1 (window-list)))
-           (other-buffer (window-buffer other-window))
-           (current-buffer (current-buffer)))
-      (switch-to-buffer other-buffer)
-      (my-display-in-selected-window current-buffer other-window)
-      (select-window other-window))
-    ))
-
-(global-set-key (kbd "M-å") 'my-switch-windows)
 
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
