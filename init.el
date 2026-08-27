@@ -105,3 +105,6 @@
 (use-package corfu
   :init
   (global-corfu-mode))
+
+(use-package magit)
+
