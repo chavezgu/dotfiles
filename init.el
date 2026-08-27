@@ -1,7 +1,6 @@
 ;; -*- lexical-binding: t; -*-
 ;; Requires
 (require 'uniquify)
-(require 'package)
 (require 'ansi-color)
 (require 'org)
 
@@ -17,7 +16,7 @@
   (tool-bar-mode -1))
 
 ;; Autoloads and aliases
-(defalias 'yes-or-no-p 'y-or-n-p)
+(setopt use-short-answers t)
 (autoload 'zap-up-to-char "misc"
   "Kill up to, but not including ARGth occurrence of CHAR." t)
 
@@ -29,7 +28,6 @@
       load-prefer-newer t
       backup-by-copying t
       frame-inhibit-implied-resize t
-      ido-enable-flex-matching t
       uniquify-buffer-name-style 'forward
       indent-tabs-mode nil
       ediff-window-setup-function 'ediff-setup-windows-plain
@@ -74,10 +72,7 @@
  '(default ((t (:family "CaskaydiaMono Nerd Font Mono" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
 
 ;; Some weird compilation thing, that should be part of emacs
-(defun my-ansi-colorize-buffer ()
-  (let ((buffer-read-only nil))
-    (ansi-color-apply-on-region (point-min) (point-max))))
-(add-hook 'compilation-filter-hook 'my-ansi-colorize-buffer)
+(add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
 
 ;; Move the current window to the other side
 (defun my-display-in-selected-window (buffer window &optional alist)
