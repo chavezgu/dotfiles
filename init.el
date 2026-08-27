@@ -69,7 +69,7 @@
 
 ;; Let's have this back:
 (custom-set-faces
- '(default ((t (:family "CaskaydiaMono Nerd Font Mono" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
+ '(default ((t (:family "Cascadia Mono" :foundry "unknown" :slant normal :weight normal :height 140 :width normal)))))
 
 ;; Some weird compilation thing, that should be part of emacs
 (add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
