@@ -44,7 +44,6 @@
 (global-set-key (kbd "M-ö") 'comment-dwim)
 (global-set-key (kbd "M-:") 'end-of-buffer)
 (global-set-key (kbd "M-ä") 'eval-expression)
-(global-set-key (kbd "M--") 'hippie-expand)
 (global-set-key (kbd "C--") 'undo)
 (global-set-key (kbd "M-\"") 'mark-word)
 
@@ -101,3 +100,8 @@
 
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
+
+;; Packages. Let's keep this as small as possible.
+(use-package corfu
+  :init
+  (global-corfu-mode))
