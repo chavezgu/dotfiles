@@ -85,8 +85,10 @@
 
 ;; Non-preinstalled. Let's keep this as small as possible
 (use-package corfu
+  :ensure t
   :init
   (global-corfu-mode))
 
-(use-package magit)
+(use-package magit
+  :ensure t)
 
