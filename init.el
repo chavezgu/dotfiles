@@ -2,7 +2,6 @@
 ;; Requires
 (require 'uniquify)
 (require 'ansi-color)
-(require 'org)
 
 ;; Modes
 (fido-vertical-mode t)
@@ -62,7 +61,6 @@
 (global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
 (global-set-key (kbd "C-c b") #'org-switchb)
-(setq org-default-notes-file (concat org-directory "/notes.org"))
 
 ;; Org-mode spellchecking configuration
 (setq ispell-program-name "enchant-2")
@@ -78,7 +76,14 @@
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
 
-;; Packages. Let's keep this as small as possible.
+;; Packages
+(use-package org
+  :defer t
+  :custom
+  ;; org-mode things
+  (org-default-notes-file (concat org-directory "/notes.org")))
+
+;; Non-preinstalled. Let's keep this as small as possible
 (use-package corfu
   :init
   (global-corfu-mode))
