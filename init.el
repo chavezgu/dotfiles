@@ -76,6 +76,15 @@
 ;; Tango dark is decent and it's part of emacs
 (load-theme 'tango-dark)
 
+;; tree-sitter
+(setopt treesit-auto-install-grammar 'ask)
+(setopt treesit-enabled-modes '(python-ts-mode))
+
+;; Eglot configuration
+(use-package eglot
+  :ensure nil
+  :hook (python-ts-mode . eglot-ensure))
+
 ;; Packages
 (use-package org
   :defer t
