@@ -16,8 +16,6 @@
 
 ;; Autoloads and aliases
 (setopt use-short-answers t)
-(autoload 'zap-up-to-char "misc"
-  "Kill up to, but not including ARGth occurrence of CHAR." t)
 
 ;; Define variables
 (setq save-interprogram-paste-before-kill t
@@ -33,8 +31,7 @@
       find-file-visit-truename t
       make-backup-files nil
       fill-column 80
-      inhibit-startup-message t
-      custom-file (expand-file-name "custom.el" user-emacs-directory))
+      inhibit-startup-message t)
 
 ;; Finnish keyboard things
 (global-set-key (kbd "M-;") 'beginning-of-buffer)
@@ -63,8 +60,9 @@
 (global-set-key (kbd "C-c b") #'org-switchb)
 
 ;; Org-mode spellchecking configuration
-(setq ispell-program-name "enchant-2")
-(setq ispell-dictionary "fi")
+;; Disabled: enchant-2 needs AUR deps, and I rarely write Finnish. Revisit if that changes.
+;; (setq ispell-program-name "enchant-2")
+;; (setq ispell-dictionary "fi")
 
 ;; Let's have this back:
 (custom-set-faces
