@@ -76,12 +76,15 @@
 
 ;; tree-sitter
 (setopt treesit-auto-install-grammar 'ask)
-(setopt treesit-enabled-modes '(python-ts-mode))
+(setopt treesit-enabled-modes '(python-ts-mode c++-ts-mode))
+(add-to-list 'major-mode-remap-alist '(c++-mode . c++-ts-mode))
+(add-to-list 'major-mode-remap-alist '(c-mode . c-ts-mode))
 
 ;; Eglot configuration
 (use-package eglot
   :ensure nil
-  :hook (python-ts-mode . eglot-ensure))
+  :hook ((python-ts-mode . eglot-ensure)
+         (c++-ts-mode . eglot-ensure)))
 
 ;; Packages
 (use-package org
