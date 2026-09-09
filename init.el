@@ -39,6 +39,7 @@
 (global-set-key (kbd "M-:") 'end-of-buffer)
 (global-set-key (kbd "M-ä") 'eval-expression)
 (global-set-key (kbd "C--") 'undo)
+(global-set-key (kbd "M--") 'hippie-expand)
 (global-set-key (kbd "M-\"") 'mark-word)
 
 ;; Better global keybindings
