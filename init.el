@@ -98,9 +98,8 @@
 ;; Packages
 (use-package org
   :defer t
-  :custom
-  ;; org-mode things
-  (org-default-notes-file (concat org-directory "/notes.org")))
+  :config
+  (setq org-default-notes-file (concat org-directory "/notes.org")))
 
 ;; Non-preinstalled. Let's keep this as small as possible
 (use-package corfu
