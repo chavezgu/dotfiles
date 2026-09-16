@@ -77,7 +77,7 @@
 
 ;; tree-sitter
 (setopt treesit-auto-install-grammar 'ask)
-(setopt treesit-enabled-modes '(python-ts-mode c++-ts-mode rust-ts-mode))
+(setopt treesit-enabled-modes '(python-ts-mode c-ts-mode c++-ts-mode rust-ts-mode))
 (setq treesit-language-source-alist
       '((python "https://github.com/tree-sitter/tree-sitter-python")
         (cpp "https://github.com/tree-sitter/tree-sitter-cpp")
@@ -91,6 +91,7 @@
 (use-package eglot
   :ensure nil
   :hook ((python-ts-mode . eglot-ensure)
+         (c-ts-mode . eglot-ensure)
          (c++-ts-mode . eglot-ensure)
          (rust-ts-mode . eglot-ensure)))
 
